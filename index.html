@@ -2,7 +2,7 @@
 <html lang="ar" dir="rtl" data-theme="light">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
   
   <title>دليل مستخدم منصة عافية تُزهر | Afiya Tazhar User Guide</title>
   <meta name="description" content="الدليل الإلكتروني الشامل والمستقل لاستخدام وإدارة منصة عافية تُزهر للمدير الرئيسي والمشرفين والزوار." />
@@ -104,6 +104,27 @@
         <button type="button" class="sidebar-close-btn" id="closeSidebarBtn" aria-label="إغلاق القائمة">
           <span>✕</span>
         </button>
+      </div>
+
+      <!-- Mobile Quick Actions Strip (Inside Drawer for Phones & Tablets) -->
+      <div class="sidebar-drawer-actions">
+        <a href="https://amoal2030.github.io/Blooming-wellness/" target="_blank" rel="noopener noreferrer" class="drawer-action-card">
+          <div class="drawer-action-icon">🌸</div>
+          <div class="drawer-action-text">
+            <strong data-i18n="drawer_btn_platform">زيارة منصة عافية تُزهر</strong>
+            <span data-i18n="drawer_btn_platform_desc">الموقع الرسمي للمبادرة ↗</span>
+          </div>
+        </a>
+        <div class="drawer-action-buttons">
+          <button type="button" class="drawer-btn-secondary" id="drawerLangBtn" aria-label="تبديل اللغة">
+            <span id="drawerLangFlag">🇬🇧</span>
+            <span id="drawerLangLabel">English</span>
+          </button>
+          <button type="button" class="drawer-btn-secondary" id="drawerPrintBtn" aria-label="طباعة الدليل">
+            <span>🖨️</span>
+            <span data-i18n="btn_print">طباعة</span>
+          </button>
+        </div>
       </div>
 
       <!-- Category 1: Overview -->
@@ -529,6 +550,10 @@
         </div>
 
         <!-- Responsive Comparison Table -->
+        <div class="table-scroll-hint" data-i18n="table_scroll_hint">
+          <span>↔️</span>
+          <span>مرر الجدول أفقيًا لمشاهدة جميع الصلاحيات</span>
+        </div>
         <div class="table-responsive-wrapper">
           <table class="comparison-table">
             <thead>
@@ -1837,6 +1862,30 @@
       </div>
     </div>
   </footer>
+
+  <!-- Mobile Bottom Navigation Bar (Smartphones & Touch Devices) -->
+  <nav class="mobile-bottom-bar" id="mobileBottomBar" aria-label="شريط التنقل السريع للهاتف">
+    <button type="button" class="bottom-bar-item" id="bottomBarMenuBtn" aria-label="أقسام الدليل">
+      <span class="bottom-bar-icon">📂</span>
+      <span class="bottom-bar-label" data-i18n="bottom_nav_sections">الأقسام</span>
+    </button>
+    <button type="button" class="bottom-bar-item" id="bottomBarSearchBtn" aria-label="البحث في الدليل">
+      <span class="bottom-bar-icon">🔍</span>
+      <span class="bottom-bar-label" data-i18n="bottom_nav_search">البحث</span>
+    </button>
+    <a href="#converter-suite" class="bottom-bar-item" aria-label="أداة تحويل رابط صورة">
+      <span class="bottom-bar-icon">🖼️</span>
+      <span class="bottom-bar-label" data-i18n="bottom_nav_converter">تحويل رابط</span>
+    </a>
+    <a href="https://amoal2030.github.io/Blooming-wellness/" target="_blank" rel="noopener noreferrer" class="bottom-bar-item bottom-bar-highlight" aria-label="زيارة منصة المبادرة الأصلية">
+      <span class="bottom-bar-icon">🌸</span>
+      <span class="bottom-bar-label" data-i18n="bottom_nav_platform">المنصة</span>
+    </a>
+    <button type="button" class="bottom-bar-item" id="bottomBarThemeBtn" aria-label="تبديل المظهر">
+      <span class="bottom-bar-icon" id="bottomBarThemeIcon">🌙</span>
+      <span class="bottom-bar-label" data-i18n="bottom_nav_theme">المظهر</span>
+    </button>
+  </nav>
 
   <!-- Vanilla JavaScript -->
   <script src="script.js"></script>

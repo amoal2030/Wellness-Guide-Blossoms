@@ -169,6 +169,16 @@
       test_success: "✅ الرابط مباشر وسليم 100%! تم تحميل الصورة بنجاح وجاهزة للاستخدام في منصة عافية تُزهر.",
       test_failed: "❌ تعذر تحميل الصورة من هذا الرابط. تأكد أن الرابط مباشر وليس محجوبًا أو منتهي الصلاحية.",
 
+      // Bottom Navigation & Drawer Actions
+      bottom_nav_sections: "الأقسام",
+      bottom_nav_search: "البحث",
+      bottom_nav_converter: "تحويل رابط",
+      bottom_nav_platform: "المنصة",
+      bottom_nav_theme: "المظهر",
+      drawer_btn_platform: "زيارة منصة عافية تُزهر",
+      drawer_btn_platform_desc: "الموقع الرسمي للمبادرة ↗",
+      table_scroll_hint: "مرر الجدول أفقيًا لمشاهدة جميع الصلاحيات",
+
       // Footer
       footer_brand: "منصة عافية تُزهِـر • Blooming Wellness",
       footer_copy: "دليل المستخدم الإلكتروني الشامل والمستقل | صُمم لدعم ونشر المعرفة الصحية المدرسية وتعزيز عافية الجميع.",
@@ -335,6 +345,16 @@
       test_success: "✅ 100% Direct & Valid Link! The image loaded successfully and is ready for use in Afiya Tazhar.",
       test_failed: "❌ Failed to load image from this URL. Please verify it is a direct image file and not blocked or expired.",
 
+      // Bottom Navigation & Drawer Actions
+      bottom_nav_sections: "Sections",
+      bottom_nav_search: "Search",
+      bottom_nav_converter: "Converter",
+      bottom_nav_platform: "Platform",
+      bottom_nav_theme: "Theme",
+      drawer_btn_platform: "Visit Afiya Tazhar",
+      drawer_btn_platform_desc: "Official Initiative Website ↗",
+      table_scroll_hint: "Scroll horizontally to view all permissions",
+
       // Footer
       footer_brand: "Afiya Tazhar Platform • Blooming Wellness",
       footer_copy: "Comprehensive Standalone Electronic User Guide | Designed to support school health education and promote flourishing wellness for all.",
@@ -450,6 +470,19 @@
       langLabel.textContent = 'العربية';
     }
 
+    // Drawer Language buttons
+    const drawerLangFlag = document.getElementById('drawerLangFlag');
+    const drawerLangLabel = document.getElementById('drawerLangLabel');
+    if (drawerLangFlag && drawerLangLabel) {
+      if (lang === 'ar') {
+        drawerLangFlag.textContent = '🇬🇧';
+        drawerLangLabel.textContent = 'English';
+      } else {
+        drawerLangFlag.textContent = '🇸🇦';
+        drawerLangLabel.textContent = 'العربية';
+      }
+    }
+
     // Translate all [data-i18n] nodes
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const key = el.getAttribute('data-i18n');
@@ -476,6 +509,11 @@
 
     if (themeIcon) {
       themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
+    }
+
+    const bottomBarThemeIcon = document.getElementById('bottomBarThemeIcon');
+    if (bottomBarThemeIcon) {
+      bottomBarThemeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
     }
   }
 
@@ -808,34 +846,84 @@
       });
     }
 
-    // Mobile Sidebar Toggle
-    if (mobileMenuBtn && appSidebar && sidebarBackdrop) {
+    // Drawer Controls (Mobile & Tablet)
+    function openDrawer() {
+      if (appSidebar) appSidebar.classList.add('open');
+      if (sidebarBackdrop) sidebarBackdrop.classList.add('open');
+      document.body.classList.add('drawer-open');
+    }
+
+    function closeDrawer() {
+      if (appSidebar) appSidebar.classList.remove('open');
+      if (sidebarBackdrop) sidebarBackdrop.classList.remove('open');
+      document.body.classList.remove('drawer-open');
+    }
+
+    if (mobileMenuBtn) {
       mobileMenuBtn.addEventListener('click', () => {
-        appSidebar.classList.toggle('open');
-        sidebarBackdrop.classList.toggle('open');
+        if (appSidebar && appSidebar.classList.contains('open')) {
+          closeDrawer();
+        } else {
+          openDrawer();
+        }
       });
+    }
 
-      sidebarBackdrop.addEventListener('click', () => {
-        appSidebar.classList.remove('open');
-        sidebarBackdrop.classList.remove('open');
-      });
+    if (sidebarBackdrop) {
+      sidebarBackdrop.addEventListener('click', closeDrawer);
+    }
 
-      const closeSidebarBtn = document.getElementById('closeSidebarBtn');
-      if (closeSidebarBtn) {
-        closeSidebarBtn.addEventListener('click', () => {
-          appSidebar.classList.remove('open');
-          sidebarBackdrop.classList.remove('open');
-        });
-      }
+    const closeSidebarBtn = document.getElementById('closeSidebarBtn');
+    if (closeSidebarBtn) {
+      closeSidebarBtn.addEventListener('click', closeDrawer);
+    }
 
-      // Close mobile sidebar on link click
+    // Close mobile sidebar on link click
+    if (appSidebar) {
       appSidebar.querySelectorAll('.sidebar-nav-link').forEach(link => {
         link.addEventListener('click', () => {
           if (window.innerWidth <= 1024) {
-            appSidebar.classList.remove('open');
-            sidebarBackdrop.classList.remove('open');
+            closeDrawer();
           }
         });
+      });
+    }
+
+    // Drawer Secondary Action Buttons
+    const drawerLangBtn = document.getElementById('drawerLangBtn');
+    if (drawerLangBtn) {
+      drawerLangBtn.addEventListener('click', () => {
+        const nextLang = state.lang === 'ar' ? 'en' : 'ar';
+        applyLanguage(nextLang);
+        showToast(nextLang === 'ar' ? 'تم تحويل اللغة إلى العربية' : 'Switched to English');
+      });
+    }
+
+    const drawerPrintBtn = document.getElementById('drawerPrintBtn');
+    if (drawerPrintBtn) {
+      drawerPrintBtn.addEventListener('click', () => {
+        closeDrawer();
+        setTimeout(() => window.print(), 250);
+      });
+    }
+
+    // Mobile Bottom Navigation Bar Buttons
+    const bottomBarMenuBtn = document.getElementById('bottomBarMenuBtn');
+    if (bottomBarMenuBtn) {
+      bottomBarMenuBtn.addEventListener('click', openDrawer);
+    }
+
+    const bottomBarSearchBtn = document.getElementById('bottomBarSearchBtn');
+    if (bottomBarSearchBtn) {
+      bottomBarSearchBtn.addEventListener('click', openSearchModal);
+    }
+
+    const bottomBarThemeBtn = document.getElementById('bottomBarThemeBtn');
+    if (bottomBarThemeBtn) {
+      bottomBarThemeBtn.addEventListener('click', () => {
+        const nextTheme = state.theme === 'dark' ? 'light' : 'dark';
+        applyTheme(nextTheme);
+        showToast(nextTheme === 'dark' ? (state.lang === 'ar' ? 'تم تفعيل الوضع الداكن' : 'Dark Mode Enabled') : (state.lang === 'ar' ? 'تم تفعيل الوضع الفاتح' : 'Light Mode Enabled'));
       });
     }
 
