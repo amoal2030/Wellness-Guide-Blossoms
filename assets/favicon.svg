@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="favGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="50%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <linearGradient id="favGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#d97706" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#065f46" />
+  <circle cx="32" cy="32" r="26" fill="none" stroke="url(#favGold)" stroke-width="1.5" stroke-dasharray="3 2" opacity="0.6"/>
+  <!-- Petals -->
+  <path d="M32 10 C27 20, 24 30, 32 40 C40 30, 37 20, 32 10 Z" fill="#34d399"/>
+  <path d="M14 28 C23 25, 30 30, 32 40 C23 37, 16 34, 14 28 Z" fill="#10b981" opacity="0.9"/>
+  <path d="M50 28 C41 25, 34 30, 32 40 C41 37, 48 34, 50 28 Z" fill="#10b981" opacity="0.9"/>
+  <path d="M20 48 C22 39, 28 39, 32 40 C27 47, 23 49, 20 48 Z" fill="#059669"/>
+  <path d="M44 48 C42 39, 36 39, 32 40 C37 47, 41 49, 44 48 Z" fill="#059669"/>
+  <!-- Dew drop -->
+  <circle cx="32" cy="39" r="3.5" fill="url(#favGold)"/>
+</svg>

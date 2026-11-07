@@ -1,0 +1,1587 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>دليل مستخدم منصة عافية تُزهر | Afiya Tazhar User Guide</title>
+  <meta name="description" content="الدليل الإلكتروني الشامل والمستقل لاستخدام وإدارة منصة عافية تُزهر للمدير الرئيسي والمشرفين والزوار." />
+  
+  <!-- OpenGraph & Social Metadata -->
+  <meta property="og:title" content="دليل مستخدم منصة عافية تُزهر | Afiya Tazhar User Guide" />
+  <meta property="og:description" content="الدليل الشامل للتعرف على المنصة واستخدام خدماتها وإدارة محتواها بسهولة." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  
+  <!-- Fonts: Cairo & Tajawal for Arabic, Inter for English -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Inter:wght@400;500;600;700&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Top Reading Progress Bar -->
+  <div id="readingProgressBar" aria-hidden="true"></div>
+
+  <!-- Header & Navigation -->
+  <header class="app-header">
+    <div class="header-container">
+      
+      <!-- Brand & Title -->
+      <a href="#intro" class="header-brand">
+        <img src="assets/favicon.svg" alt="شعار عافية تُزهر" class="brand-logo-img" />
+        <div class="brand-text-wrap">
+          <div class="brand-title">
+            <span data-i18n="brand_title">دليل عافية تُزهِـر</span>
+            <span class="brand-badge" data-i18n="brand_badge">دليل رسمي مستقل</span>
+          </div>
+          <span class="brand-subtitle" data-i18n="brand_subtitle">Afiya Tazhar • User &amp; Admin Guide</span>
+        </div>
+      </a>
+
+      <!-- Quick Search Trigger -->
+      <button class="search-trigger-btn" id="openSearchBtn" aria-label="بحث في الدليل">
+        <span class="search-icon">🔍</span>
+        <span data-i18n="search_placeholder">ابحث في مواضيع الدليل...</span>
+        <kbd class="search-kbd">Ctrl K</kbd>
+      </button>
+
+      <!-- Action Controls -->
+      <div class="header-actions">
+        <!-- External Initiative Link -->
+        <a href="https://amoal2030.github.io/Blooming-wellness/" target="_blank" rel="noopener noreferrer" class="action-btn btn-external-platform" title="زيارة منصة المبادرة الأصلية">
+          <span>🌸</span>
+          <span data-i18n="btn_visit_platform">زيارة منصة المبادرة</span>
+          <span style="font-size: 0.75rem;">↗</span>
+        </a>
+
+        <!-- Print Guide -->
+        <button class="action-btn" id="printGuideBtn" aria-label="طباعة الدليل أو حفظه بصيغة PDF" title="طباعة أو حفظ PDF">
+          <span>🖨️</span>
+          <span data-i18n="btn_print">طباعة</span>
+        </button>
+
+        <!-- Language Switcher -->
+        <button class="action-btn" id="langToggleBtn" aria-label="تبديل اللغة">
+          <span id="langFlag">🇬🇧</span>
+          <span id="langLabel">English</span>
+        </button>
+
+        <!-- Dark / Light Theme Switcher -->
+        <button class="action-btn" id="themeToggleBtn" aria-label="تبديل الوضع الداكن والفاتح" title="تبديل المظهر">
+          <span id="themeIcon">🌙</span>
+        </button>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="action-btn mobile-menu-toggle" id="mobileMenuBtn" aria-label="فتح القائمة الجانبية">
+          <span>☰</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Sidebar Backdrop Overlay -->
+  <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
+  <!-- Main Application Layout -->
+  <div class="app-layout">
+
+    <!-- Sidebar Navigation -->
+    <aside class="app-sidebar" id="appSidebar">
+
+      <!-- Category 1: Overview -->
+      <div class="sidebar-category">
+        <div class="sidebar-category-header">
+          <span data-i18n="cat_overview">نظرة عامة والترحيب</span>
+          <span>🌱</span>
+        </div>
+        <ul class="sidebar-nav-list">
+          <li>
+            <a href="#intro" class="sidebar-nav-link active">
+              <span class="nav-icon">✨</span>
+              <span data-i18n="nav_intro">مرحبًا بك في الدليل</span>
+            </a>
+          </li>
+          <li>
+            <a href="#about-platform" class="sidebar-nav-link">
+              <span class="nav-icon">🏛️</span>
+              <span data-i18n="nav_about">عن منصة عافية تُزهر</span>
+            </a>
+          </li>
+          <li>
+            <a href="#roles-comparison" class="sidebar-nav-link">
+              <span class="nav-icon">⚖️</span>
+              <span data-i18n="nav_roles_matrix">مصفوفة الصلاحيات</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Category 2: Main Admin -->
+      <div class="sidebar-category">
+        <div class="sidebar-category-header">
+          <span data-i18n="cat_admin">دليل المدير الرئيسي</span>
+          <span class="nav-badge-pill badge-admin" data-i18n="badge_admin">المدير</span>
+        </div>
+        <ul class="sidebar-nav-list">
+          <li>
+            <a href="#admin-login" class="sidebar-nav-link">
+              <span class="nav-icon">🛡️</span>
+              <span data-i18n="nav_admin_login">تسجيل دخول Google</span>
+            </a>
+          </li>
+          <li>
+            <a href="#admin-dashboard" class="sidebar-nav-link">
+              <span class="nav-icon">📊</span>
+              <span data-i18n="nav_admin_dashboard">لوحة الإدارة والإحصائيات</span>
+            </a>
+          </li>
+          <li>
+            <a href="#admin-settings" class="sidebar-nav-link">
+              <span class="nav-icon">⚙️</span>
+              <span data-i18n="nav_admin_settings">إعدادات الموقع والشعارات</span>
+            </a>
+          </li>
+          <li>
+            <a href="#admin-broadcasts" class="sidebar-nav-link">
+              <span class="nav-icon">📻</span>
+              <span data-i18n="nav_admin_broadcasts">إدارة الإذاعات الصباحية</span>
+            </a>
+          </li>
+          <li>
+            <a href="#admin-lectures" class="sidebar-nav-link">
+              <span class="nav-icon">🎓</span>
+              <span data-i18n="nav_admin_lectures">إدارة المحاضرات التوعوية</span>
+            </a>
+          </li>
+          <li>
+            <a href="#admin-interviews" class="sidebar-nav-link">
+              <span class="nav-icon">🎙️</span>
+              <span data-i18n="nav_admin_interviews">إدارة المقابلات الحوارية</span>
+            </a>
+          </li>
+          <li>
+            <a href="#admin-surveys" class="sidebar-nav-link">
+              <span class="nav-icon">📋</span>
+              <span data-i18n="nav_admin_surveys">إدارة الاستبانات والقياس</span>
+            </a>
+          </li>
+          <li>
+            <a href="#admin-events" class="sidebar-nav-link">
+              <span class="nav-icon">🗓️</span>
+              <span data-i18n="nav_admin_events">إدارة الفعاليات والتسجيلات</span>
+            </a>
+          </li>
+          <li>
+            <a href="#admin-supervisors" class="sidebar-nav-link">
+              <span class="nav-icon">👥</span>
+              <span data-i18n="nav_admin_supervisors">إدارة وتوزيع المشرفين</span>
+            </a>
+          </li>
+          <li>
+            <a href="#admin-saving" class="sidebar-nav-link">
+              <span class="nav-icon">💾</span>
+              <span data-i18n="nav_admin_saving">حفظ وتأكيد التغييرات</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Category 3: Supervisors -->
+      <div class="sidebar-category">
+        <div class="sidebar-category-header">
+          <span data-i18n="cat_supervisors">دليل المشرفين</span>
+          <span class="nav-badge-pill badge-supervisor" data-i18n="badge_supervisor">المشرف</span>
+        </div>
+        <ul class="sidebar-nav-list">
+          <li>
+            <a href="#supervisor-login" class="sidebar-nav-link">
+              <span class="nav-icon">🔑</span>
+              <span data-i18n="nav_sup_login">تسجيل الدخول والصلاحيات</span>
+            </a>
+          </li>
+          <li>
+            <a href="#supervisor-content" class="sidebar-nav-link">
+              <span class="nav-icon">✍️</span>
+              <span data-i18n="nav_sup_content">إضافة وتعديل وحذف المحتوى</span>
+            </a>
+          </li>
+          <li>
+            <a href="#supervisor-media" class="sidebar-nav-link">
+              <span class="nav-icon">🖼️</span>
+              <span data-i18n="nav_sup_media">إدراج الصور والروابط</span>
+            </a>
+          </li>
+          <li>
+            <a href="#supervisor-limits" class="sidebar-nav-link">
+              <span class="nav-icon">🚧</span>
+              <span data-i18n="nav_sup_limits">حدود الصلاحية الصارمة</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Category 4: Visitors & Users -->
+      <div class="sidebar-category">
+        <div class="sidebar-category-header">
+          <span data-i18n="cat_users">دليل الزائر والمستخدم</span>
+          <span class="nav-badge-pill badge-visitor" data-i18n="badge_visitor">الزوار</span>
+        </div>
+        <ul class="sidebar-nav-list">
+          <li>
+            <a href="#user-browsing" class="sidebar-nav-link">
+              <span class="nav-icon">🧭</span>
+              <span data-i18n="nav_user_browsing">تصفح أقسام المنصة</span>
+            </a>
+          </li>
+          <li>
+            <a href="#user-media" class="sidebar-nav-link">
+              <span class="nav-icon">🎧</span>
+              <span data-i18n="nav_user_media">الإذاعات والمحاضرات والمقابلات</span>
+            </a>
+          </li>
+          <li>
+            <a href="#user-participation" class="sidebar-nav-link">
+              <span class="nav-icon">📝</span>
+              <span data-i18n="nav_user_participate">المشاركة في الاستبانات والتسجيل</span>
+            </a>
+          </li>
+          <li>
+            <a href="#user-devices" class="sidebar-nav-link">
+              <span class="nav-icon">📱</span>
+              <span data-i18n="nav_user_devices">التصفح بالهاتف والكمبيوتر</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Category 5: Images & Direct Links -->
+      <div class="sidebar-category">
+        <div class="sidebar-category-header">
+          <span data-i18n="cat_images">دليل الصور والشعارات</span>
+          <span class="nav-badge-pill badge-highlight" data-i18n="badge_essential">هام جداً</span>
+        </div>
+        <ul class="sidebar-nav-list">
+          <li>
+            <a href="#image-types" class="sidebar-nav-link">
+              <span class="nav-icon">🎯</span>
+              <span data-i18n="nav_img_types">ما هو الرابط المباشر؟</span>
+            </a>
+          </li>
+          <li>
+            <a href="#image-upload-steps" class="sidebar-nav-link">
+              <span class="nav-icon">📤</span>
+              <span data-i18n="nav_img_upload">الخطوات الـ 12 للرفع (ImgBB)</span>
+            </a>
+          </li>
+          <li>
+            <a href="#image-tester" class="sidebar-nav-link">
+              <span class="nav-icon">🧪</span>
+              <span data-i18n="nav_img_tester">فحص ومعاينة الرابط المباشر</span>
+            </a>
+          </li>
+          <li>
+            <a href="#image-logos" class="sidebar-nav-link">
+              <span class="nav-icon">👑</span>
+              <span data-i18n="nav_img_logos">تغيير الشعارات في الإعدادات</span>
+            </a>
+          </li>
+          <li>
+            <a href="#image-best-practices" class="sidebar-nav-link">
+              <span class="nav-icon">🔒</span>
+              <span data-i18n="nav_img_security">أمان وخصوصية الصور</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Category 6: Troubleshooting -->
+      <div class="sidebar-category">
+        <div class="sidebar-category-header">
+          <span data-i18n="cat_faq">حل المشكلات الشائعة</span>
+          <span>❓</span>
+        </div>
+        <ul class="sidebar-nav-list">
+          <li>
+            <a href="#faq-section" class="sidebar-nav-link">
+              <span class="nav-icon">💡</span>
+              <span data-i18n="nav_faq">الأسئلة الشائعة والحلول</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Sidebar Footer -->
+      <div class="sidebar-footer-box">
+        <div><strong data-i18n="sidebar_footer_title">دليل عافية تُزهر الإلكتروني</strong></div>
+        <div data-i18n="sidebar_footer_desc">مبني لخدمة المجتمع التعليمي والصحي.</div>
+        <a href="https://amoal2030.github.io/Blooming-wellness/" target="_blank" rel="noopener noreferrer">
+          <span data-i18n="sidebar_footer_link">فتح المنصة في تبويب جديد ↗</span>
+        </a>
+      </div>
+
+    </aside>
+
+    <!-- Main Content Area -->
+    <main class="app-content">
+
+      <!-- ========================================== -->
+      <!-- SECTION 1: WELCOME & OVERVIEW -->
+      <!-- ========================================== -->
+      <section id="intro" class="guide-section">
+
+        <!-- Hero Banner -->
+        <div class="hero-banner">
+          <div class="hero-tag">
+            <span>🌸</span>
+            <span data-i18n="hero_tag">دليل الاستخدام الرسمي المستقل</span>
+          </div>
+          <h1 class="hero-title" data-i18n="hero_title">مرحبًا بك في دليل مستخدم منصة عافية تُزهر</h1>
+          <p class="hero-description" data-i18n="hero_desc">
+            دليلك الشامل للتعرف على المنصة واستخدام خدماتها وإدارة محتواها بسهولة، خطوة بخطوة للمدير الرئيسي، المشرفين، والزوار.
+          </p>
+          <div class="hero-actions-row">
+            <a href="https://amoal2030.github.io/Blooming-wellness/" target="_blank" rel="noopener noreferrer" class="btn-hero-primary">
+              <span>🌸</span>
+              <span data-i18n="btn_visit_platform">زيارة منصة المبادرة</span>
+              <span>↗</span>
+            </a>
+            <a href="#image-types" class="btn-hero-secondary">
+              <span>🖼️</span>
+              <span data-i18n="btn_quick_images">دليل رفع الصور المباشرة</span>
+            </a>
+            <a href="#faq-section" class="btn-hero-secondary">
+              <span>❓</span>
+              <span data-i18n="btn_quick_faq">حل المشكلات الشائعة</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- 5 Quick Access Cards -->
+        <div class="quick-cards-grid">
+          
+          <a href="#admin-login" class="guide-portal-card">
+            <div class="portal-card-icon icon-admin">👑</div>
+            <h3 class="portal-card-title" data-i18n="card_admin_title">دليل المدير الرئيسي</h3>
+            <p class="portal-card-desc" data-i18n="card_admin_desc">
+              تسجيل الدخول، إدارة المشرفين، تعديل الصلاحيات، متابعة الإحصائيات، وضبط إعدادات المنصة.
+            </p>
+            <div class="portal-card-footer">
+              <span data-i18n="card_learn_more">استعراض الخطوات</span>
+              <span>←</span>
+            </div>
+          </a>
+
+          <a href="#supervisor-login" class="guide-portal-card">
+            <div class="portal-card-icon icon-supervisor">💼</div>
+            <h3 class="portal-card-title" data-i18n="card_sup_title">دليل المشرفين</h3>
+            <p class="portal-card-desc" data-i18n="card_sup_desc">
+              إضافة المحتوى التوعوي، تعديل المواد، إدراج الروابط والصور، وفهم حدود الصلاحية المعينة.
+            </p>
+            <div class="portal-card-footer">
+              <span data-i18n="card_learn_more">استعراض الخطوات</span>
+              <span>←</span>
+            </div>
+          </a>
+
+          <a href="#user-browsing" class="guide-portal-card">
+            <div class="portal-card-icon icon-visitor">🌱</div>
+            <h3 class="portal-card-title" data-i18n="card_visitor_title">دليل المستخدم والزائر</h3>
+            <p class="portal-card-desc" data-i18n="card_visitor_desc">
+              تصفح الإذاعات الصباحية، حضور المحاضرات، مشاهدة المقابلات، والتسجيل بالفعاليات.
+            </p>
+            <div class="portal-card-footer">
+              <span data-i18n="card_learn_more">استعراض الخطوات</span>
+              <span>←</span>
+            </div>
+          </a>
+
+          <a href="#image-types" class="guide-portal-card">
+            <div class="portal-card-icon icon-images">🖼️</div>
+            <h3 class="portal-card-title" data-i18n="card_img_title">دليل الصور والشعارات</h3>
+            <p class="portal-card-desc" data-i18n="card_img_desc">
+              تحويل الصور إلى روابط مباشرة خطوة بخطوة، استخدام ImgBB، وفحص الروابط بالأداة المدمجة.
+            </p>
+            <div class="portal-card-footer">
+              <span data-i18n="card_learn_more">استعراض الخطوات</span>
+              <span>←</span>
+            </div>
+          </a>
+
+          <a href="#faq-section" class="guide-portal-card">
+            <div class="portal-card-icon icon-faq">❓</div>
+            <h3 class="portal-card-title" data-i18n="card_faq_title">حل المشكلات الشائعة</h3>
+            <p class="portal-card-desc" data-i18n="card_faq_desc">
+              إجابات عملية عن مشاكل عدم ظهور لوحة الإدارة، رسائل عدم التصريح، وأخطاء حفظ الصور.
+            </p>
+            <div class="portal-card-footer">
+              <span data-i18n="card_learn_more">استعراض الحلول</span>
+              <span>←</span>
+            </div>
+          </a>
+
+        </div>
+
+      </section>
+
+      <!-- SECTION: ABOUT PLATFORM -->
+      <article id="about-platform" class="lesson-article">
+        <header class="lesson-header">
+          <div class="lesson-breadcrumbs">
+            <span data-i18n="cat_overview">نظرة عامة</span>
+            <span class="sep">/</span>
+            <span data-i18n="nav_about">عن المنصة والهيكل</span>
+          </div>
+          <div class="lesson-title-row">
+            <h2 class="lesson-main-title" data-i18n="about_title">ما هي منصة «عافية تُزهر»؟</h2>
+            <span class="lesson-role-pill badge-admin" data-i18n="pill_all_roles">لجميع المستخدمين</span>
+          </div>
+        </header>
+
+        <p data-i18n="about_p1">
+          منصة <strong>«عافية تُزهر» (Blooming Wellness)</strong> هي مبادرة إلكترونية وتوعوية صحية مصممة لتعزيز نمط الحياة الصحي والنشاط البدني والنفسي في البيئات التعليمية والمدرسية والمجتمعية، من خلال تقديم محتوى إرشادي متكامل يزهر بالصحة والحيوية.
+        </p>
+
+        <div class="callout callout-tip">
+          <div class="callout-icon">💡</div>
+          <div class="callout-content">
+            <div class="callout-title" data-i18n="about_tip_title">تنويه استقلالية الدليل</div>
+            <div data-i18n="about_tip_desc">
+              هذا الموقع هو <strong>دليل إرشادي مستقل تمامًا</strong> لشرح طريقة الاستخدام والإدارة، ولا يقوم بأي اتصال مباشر بقاعدة بيانات المبادرة أو تعديل صلاحيات مستخدميها تلقائيًا.
+            </div>
+          </div>
+        </div>
+
+        <h3 data-i18n="about_sections_title">الأقسام الرئيسية في منصة المبادرة:</h3>
+        <ul>
+          <li><strong data-i18n="sec_1_title">الإذاعات الصباحية المدرسية:</strong> <span data-i18n="sec_1_desc">نصوص ومقاطع صوتية موجهة للطلاب والطالبات في الطابور الصباحي.</span></li>
+          <li><strong data-i18n="sec_2_title">المحاضرات التوعوية:</strong> <span data-i18n="sec_2_desc">ندوات تثقيفية ولقاءات إرشادية حول التغذية السليمة وممارسة الرياضة.</span></li>
+          <li><strong data-i18n="sec_3_title">المقابلات الحوارية:</strong> <span data-i18n="sec_3_desc">حوارات مصورة ومسموعة مع مختصين في مجالات الصحة والتربية البدنية.</span></li>
+          <li><strong data-i18n="sec_4_title">الاستبانات وقياس الأثر:</strong> <span data-i18n="sec_4_desc">نماذج تفاعلية لقياس وعي المشاركين ومدى استفادتهم من المبادرة.</span></li>
+          <li><strong data-i18n="sec_5_title">الأنشطة والفعاليات الصحية:</strong> <span data-i18n="sec_5_desc">روزنامة بالورش والمسابقات الميدانية، وروابط للتسجيل المباشر فيها.</span></li>
+        </ul>
+      </article>
+
+      <!-- SECTION: ROLES MATRIX -->
+      <article id="roles-comparison" class="lesson-article">
+        <header class="lesson-header">
+          <div class="lesson-breadcrumbs">
+            <span data-i18n="cat_overview">نظرة عامة</span>
+            <span class="sep">/</span>
+            <span data-i18n="nav_roles_matrix">مصفوفة الصلاحيات</span>
+          </div>
+          <h2 class="lesson-main-title" data-i18n="matrix_title">مصفوفة الأدوار والصلاحيات في المنصة</h2>
+        </header>
+
+        <p data-i18n="matrix_desc">
+          تعتمد منصة عافية تُزهر على هيكل أمني صارم يفصل بين المدير الرئيسي، المشرفين المفوضين، والزوار. يوضح المخطط والجدول أدناه مسؤولية كل طرف:
+        </p>
+
+        <!-- Roles Diagram SVG -->
+        <div class="diagram-frame">
+          <img src="assets/diagram-roles.svg" alt="مصفوفة صلاحيات وأدوار منصة عافية تُزهر" />
+          <div class="diagram-caption" data-i18n="diagram_roles_cap">رسم توضيحي: هرمية الصلاحيات والحدود الإدارية في منصة عافية تُزهر</div>
+        </div>
+
+        <!-- Responsive Comparison Table -->
+        <div class="table-responsive-wrapper">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th data-i18n="th_feature">الخاصية / الإجراء</th>
+                <th data-i18n="th_admin">المدير الرئيسي (Super Admin)</th>
+                <th data-i18n="th_supervisor">المشرف المعتمد (Supervisor)</th>
+                <th data-i18n="th_visitor">المستخدم والزائر (Visitor)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-i18n="row_1_f">تصفح المحتوى والأنشطة</td>
+                <td>✅ متاح</td>
+                <td>✅ متاح</td>
+                <td>✅ متاح</td>
+              </tr>
+              <tr>
+                <td data-i18n="row_2_f">المشاركة في الاستبانات والتسجيل</td>
+                <td>✅ متاح</td>
+                <td>✅ متاح</td>
+                <td>✅ متاح</td>
+              </tr>
+              <tr>
+                <td data-i18n="row_3_f">تسجيل الدخول للوحة التحكم</td>
+                <td>✅ نعم (بحساب Google المعتمد)</td>
+                <td>✅ نعم (بحساب المشرف المصرح)</td>
+                <td>❌ غير متاح</td>
+              </tr>
+              <tr>
+                <td data-i18n="row_4_f">إضافة وتعديل المحتوى الموكل</td>
+                <td>✅ متاح لجميع الأقسام</td>
+                <td>✅ متاح للأقسام المصرح بها فقط</td>
+                <td>❌ غير متاح</td>
+              </tr>
+              <tr>
+                <td data-i18n="row_5_f">تغيير هوية المنصة والشعارات</td>
+                <td>✅ متاح (إذا توفرت باللوحة)</td>
+                <td>❌ محظور تمامًا</td>
+                <td>❌ غير متاح</td>
+              </tr>
+              <tr>
+                <td data-i18n="row_6_f">إضافة أو حذف المشرفين وتعديل صلاحياتهم</td>
+                <td>✅ صلاحية حصرية للمدير</td>
+                <td>❌ محظور (لا يمكنه ترقية نفسه)</td>
+                <td>❌ غير متاح</td>
+              </tr>
+              <tr>
+                <td data-i18n="row_7_f">الاطلاع على إحصائيات المنصة الكلية</td>
+                <td>✅ متاح بلوحة القياس</td>
+                <td>⚠️ محدود بالقسم الموكل</td>
+                <td>❌ غير متاح</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <!-- ========================================== -->
+      <!-- SECTION 2: MAIN ADMIN GUIDE -->
+      <!-- ========================================== -->
+      <article id="admin-login" class="lesson-article">
+        <header class="lesson-header">
+          <div class="lesson-breadcrumbs">
+            <span data-i18n="cat_admin">دليل المدير الرئيسي</span>
+            <span class="sep">/</span>
+            <span data-i18n="nav_admin_login">تسجيل الدخول بلوحة الإدارة</span>
+          </div>
+          <div class="lesson-title-row">
+            <h2 class="lesson-main-title" data-i18n="admin_login_title">تسجيل الدخول بحساب Google المعتمد</h2>
+            <span class="lesson-role-pill badge-admin" data-i18n="badge_admin">المدير الرئيسي</span>
+          </div>
+        </header>
+
+        <p data-i18n="admin_login_p1">
+          يتم حماية لوحة إدارة منصة عافية تُزهر من خلال نظام مصادقة آمن باستخدام حساب Google. لضمان أقصى درجات الأمان، يتم منح صلاحية «المدير الرئيسي» فقط للبريد الإلكتروني المعتمد مسبقًا في سجلات المبادرة.
+        </p>
+
+        <div class="steps-timeline">
+          <div class="step-card">
+            <div class="step-number-badge">1</div>
+            <div class="step-card-body">
+              <h4 class="step-card-title" data-i18n="admin_s1_t">الوصول إلى زر الدخول في المنصة</h4>
+              <p class="step-card-text" data-i18n="admin_s1_d">
+                افتح منصة عافية تُزهر، وانتقل إلى أعلى الصفحة أو التذييل واضغط على زر «تسجيل الدخول» أو أيقونة القفل الإداري.
+              </p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number-badge">2</div>
+            <div class="step-card-body">
+              <h4 class="step-card-title" data-i18n="admin_s2_t">اختيار تسجيل الدخول عبر Google</h4>
+              <p class="step-card-text" data-i18n="admin_s2_d">
+                انقر على خيار «Sign in with Google». ستفتح نافذة منبثقة رسمية وآمنة من Google لتحديد حسابك.
+              </p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number-badge">3</div>
+            <div class="step-card-body">
+              <h4 class="step-card-title" data-i18n="admin_s3_t">اختيار البريد الإلكتروني المعتمد للمدير</h4>
+              <p class="step-card-text" data-i18n="admin_s3_d">
+                تأكد من اختيار نفس حساب Google المصرح له كمدير رئيسي للمنصة. إذا سجلت بحساب شخصي آخر، ستظهر لك رسالة تفيد بأنك زائر عادي ولن تفتح لوحة الإدارة.
+              </p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number-badge">4</div>
+            <div class="step-card-body">
+              <h4 class="step-card-title" data-i18n="admin_s4_t">التحقق وفتح لوحة الإدارة</h4>
+              <p class="step-card-text" data-i18n="admin_s4_d">
+                بمجرد اكتمال تسجيل الدخول، ستقوم المنصة بفحص الصلاحيات تلقائيًا، وسيظهر تبويب «لوحة الإدارة» (Admin Panel) في شريط التنقل العلوي للموقع.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout callout-warning">
+          <div class="callout-icon">⚠️</div>
+          <div class="callout-content">
+            <div class="callout-title" data-i18n="admin_login_warn_t">ماذا تفعل إذا لم تظهر لوحة الإدارة بعد الدخول؟</div>
+            <div data-i18n="admin_login_warn_d">
+              تأكد من أنك لست مسجلاً بحساب Google ثانوي في المتصفح. سجّل الخروج ثم أعد الدخول مع اختيار البريد الإداري الصحيح، وتأكد من تحديث الصفحة (Refresh).
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article id="admin-dashboard" class="lesson-article">
+        <header class="lesson-header">
+          <div class="lesson-breadcrumbs">
+            <span data-i18n="cat_admin">دليل المدير الرئيسي</span>
+            <span class="sep">/</span>
+            <span data-i18n="nav_admin_dashboard">لوحة الإدارة والإحصائيات</span>
+          </div>
+          <h2 class="lesson-main-title" data-i18n="dash_title">الوصول إلى لوحة الإدارة ومتابعة الإحصائيات</h2>
+        </header>
+
+        <p data-i18n="dash_p1">
+          تعتبر لوحة الإدارة مركز القيادة والتحكم لمنصة عافية تُزهر. توفر اللوحة واجهة بديهية تسمح بمراقبة تفاعل الزوار ومؤشرات الأداء للمبادرة:
+        </p>
+
+        <ul>
+          <li><strong data-i18n="dash_kpi_1">عداد الزيارات والمشاهدات:</strong> <span data-i18n="dash_kpi_1_d">إجمالي عدد الزوار وتفاعلهم مع مختلف الأقسام الصحية.</span></li>
+          <li><strong data-i18n="dash_kpi_2">إحصائيات الاستبانات:</strong> <span data-i18n="dash_kpi_2_d">عدد الردود المكتملة على الاستبانات الصحية ونسب الرضا والوعي.</span></li>
+          <li><strong data-i18n="dash_kpi_3">أعداد المسجلين بالفعاليات:</strong> <span data-i18n="dash_kpi_3_d">متابعة قوائم المشاركين في ورش العمل والمسابقات الميدانية.</span></li>
+          <li><strong data-i18n="dash_kpi_4">حالة المحتوى:</strong> <span data-i18n="dash_kpi_4_d">بيان المحاضرات والإذاعات النشطة والمسودات قيد المراجعة.</span></li>
+        </ul>
+      </article>
+
+      <article id="admin-settings" class="lesson-article">
+        <header class="lesson-header">
+          <div class="lesson-breadcrumbs">
+            <span data-i18n="cat_admin">دليل المدير الرئيسي</span>
+            <span class="sep">/</span>
+            <span data-i18n="nav_admin_settings">إعدادات الموقع والشعارات</span>
+          </div>
+          <h2 class="lesson-main-title" data-i18n="settings_title">إدارة إعدادات المنصة وتغيير الشعارات</h2>
+        </header>
+
+        <p data-i18n="settings_p1">
+          يتيح تبويب إعدادات الموقع للمدير الرئيسي تحديث الهوية البصرية وعناوين المنصة. 
+          <em>ملاحظة دقيقة: تتاح خيارات إدارة الشعارات بحسب ما تم تفعيله في لوحة الإدارة البرمجية للموقع.</em>
+        </p>
+
+        <h3 data-i18n="settings_logo_h3">طريقة تحديث شعار المبادرة أو شعار الوزارة:</h3>
+        <ol>
+          <li data-i18n="settings_s1">ادخل إلى لوحة الإدارة وانقر على تبويب <strong>«إعدادات الموقع» (Site Settings)</strong>.</li>
+          <li data-i18n="settings_s2">ابحث عن حقل <strong>«رابط شعار المبادرة»</strong> أو <strong>«رابط شعار الوزارة»</strong> (إذا كانت الخاصية متاحة باللوحة).</li>
+          <li data-i18n="settings_s3">قم برفع صورة الشعار المعتمدة (بصيغة PNG ذات خلفية شفافة مفضلة) على موقع استضافة واحصل على <strong>الرابط المباشر</strong> (راجع <a href="#image-types">دليل الصور المباشرة</a>).</li>
+          <li data-i18n="settings_s4">الصق الرابط المباشر في الحقل المخصص. ستظهر لك معاينة فورية للشعار الجديد بجانب الحقل إذا كان الرابط صحيحًا.</li>
+          <li data-i18n="settings_s5">اضغط على زر <strong>«حفظ التعديلات»</strong> للتثبيت.</li>
+          <li data-i18n="settings_s6">افتح واجهة الموقع في تبويب جديد أو متصفح خفي للتأكد من ظهور الشعار في رأس الموقع للمستخدمين.</li>
+        </ol>
+
+        <div class="callout callout-critical">
+          <div class="callout-icon">🚫</div>
+          <div class="callout-content">
+            <div class="callout-title" data-i18n="settings_crit_t">تجنب لصق روابط صفحات العرض</div>
+            <div data-i18n="settings_crit_d">
+              إذا قمت بلصق رابط صفحة استضافة مثل (imgbb.com/xyz) بدلًا من رابط الملف الصافي (i.ibb.co/xyz.png)، سيظهر الشعار كصورة معطوبة أو لن يظهر إطلاقًا.
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article id="admin-broadcasts" class="lesson-article">
+        <header class="lesson-header">
+          <div class="lesson-breadcrumbs">
+            <span data-i18n="cat_admin">دليل المدير الرئيسي</span>
+            <span class="sep">/</span>
+            <span data-i18n="nav_admin_broadcasts">الإذاعات الصباحية</span>
+          </div>
+          <h2 class="lesson-main-title" data-i18n="broad_title">إدارة الإذاعات الصباحية المدرسية</h2>
+        </header>
+
+        <p data-i18n="broad_p1">
+          تمثل الإذاعة الصباحية الركيزة اليومية للتوعية الصحية في منصة عافية تُزهر. يمكن للمدير إضافة إذاعات جديدة، تعديل نصوصها، أو ربطها بملفات صوتية:
+        </p>
+
+        <div class="steps-timeline">
+          <div class="step-card">
+            <div class="step-number-badge">➕</div>
+            <div class="step-card-body">
+              <h4 class="step-card-title" data-i18n="broad_s1_t">إضافة إذاعة جديدة</h4>
+              <p class="step-card-text" data-i18n="broad_s1_d">
+                اضغط على زر «إضافة إذاعة صباحية جديدة»، واملأ عنوان الإذاعة (مثال: «التغذية الذكية ليوم دراسي مفعم بالحيوية»)، وتاريخ النشر، والمحاور الإرشادية.
+              </p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number-badge">🔊</div>
+            <div class="step-card-body">
+              <h4 class="step-card-title" data-i18n="broad_s2_t">إرفاق التسجيل الصوتي أو النص</h4>
+              <p class="step-card-text" data-i18n="broad_s2_d">
+                أدخل الرابط المباشر للتسجيل الصوتي (إن وجد) أو اكتب الكلمة الإذاعية الكاملة ليتمكن الطلاب ومسؤولو الإذاعة المدرسية من قراءتها.
+              </p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number-badge">💾</div>
+            <div class="step-card-body">
+              <h4 class="step-card-title" data-i18n="broad_s3_t">النشر والحفظ</h4>
+              <p class="step-card-text" data-i18n="broad_s3_d">
+                اختر حالة النشر «منشور للعامة» ثم اضغط «حفظ». تظهر الإذاعة فورًا في قسم الإذاعات على الصفحة الرئيسية للزوار.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article id="admin-lectures" class="lesson-article">
+        <header class="lesson-header">
+          <div class="lesson-breadcrumbs">
+            <span data-i18n="cat_admin">دليل المدير الرئيسي</span>
+            <span class="sep">/</span>
+            <span data-i18n="nav_admin_lectures">المحاضرات التوعوية</span>
+          </div>
+          <h2 class="lesson-main-title" data-i18n="lec_title">إدارة المحاضرات التوعوية</h2>
+        </header>
+
+        <p data-i18n="lec_p1">
+          يتيح هذا القسم توثيق المحاضرات واللقاءات الصحية التي تنظمها المبادرة:
+        </p>
+
+        <ul>
+          <li><strong data-i18n="lec_f1">عنوان المحاضرة واسم المحاضر:</strong> <span data-i18n="lec_f1_d">تدوين اسم الطبيب أو الأخصائي الصحي المعتمد مع صفته المهنية.</span></li>
+          <li><strong data-i18n="lec_f2">صورة غلاف المحاضرة:</strong> <span data-i18n="lec_f2_d">إدراج رابط مباشر لصورة البوستر التعريفي للمحاضرة.</span></li>
+          <li><strong data-i18n="lec_f3">رابط المشاهدة أو التسجيل:</strong> <span data-i18n="lec_f3_d">إدراج رابط فيديو اليوتيوب أو المنصة الافتراضية للقاء.</span></li>
+          <li><strong data-i18n="lec_f4">محاور المحاضرة وتلخيص الفوائد:</strong> <span data-i18n="lec_f4_d">نقاط إرشادية مختصرة يستفيد منها الزائر سريعًا.</span></li>
+        </ul>
+      </article>
+
+      <article id="admin-interviews" class="lesson-article">
+        <header class="lesson-header">
+          <div class="lesson-breadcrumbs">
+            <span data-i18n="cat_admin">دليل المدير الرئيسي</span>
+            <span class="sep">/</span>
+            <span data-i18n="nav_admin_interviews">المقابلات الحوارية</span>
+          </div>
+          <h2 class="lesson-main-title" data-i18n="int_title">إدارة المقابلات الحوارية</h2>
+        </header>
+        <p data-i18n="int_p1">
+          المقابلات الحوارية تعزز الشراكة مع الخبراء والطلاب الملهمين. يمكن للمدير إضافة مقابلة جديدة، تحديد موضوع النقاش، إرفاق رابط الفيديو أو البودكاست، وربطها بالوسوم الصحية ذات الصلة.
+        </p>
+      </article>
+
+      <article id="admin-surveys" class="lesson-article">
+        <header class="lesson-header">
+          <div class="lesson-breadcrumbs">
+            <span data-i18n="cat_admin">دليل المدير الرئيسي</span>
+            <span class="sep">/</span>
+            <span data-i18n="nav_admin_surveys">الاستبانات وقياس الأثر</span>
+          </div>
+          <h2 class="lesson-main-title" data-i18n="surv_title">إدارة الاستبانات وقياس الأثر الصحي</h2>
+        </header>
+
+        <p data-i18n="surv_p1">
+          تمكن الاستبانات إدارة المنصة من قياس أثر الأنشطة وتغذية راجعة من الطلاب والمعلمين وأولياء الأمور:
+        </p>
+        <ol>
+          <li data-i18n="surv_s1">إنشاء استبانة جديدة بعنوان محدد وتحديد الفئة المستهدفة.</li>
+          <li data-i18n="surv_s2">إدراج رابط الاستبانة (نماذج Google Forms أو Microsoft Forms أو النموذج الداخلي للمنصة).</li>
+          <li data-i18n="surv_s3">تحديد تاريخ الإغلاق وتفعيل أو إيقاف استقبال المشاركات بنقرة واحدة.</li>
+          <li data-i18n="surv_s4">مراجعة تقرير الردود وتحميل ملخص النتائج لتحسين الفعاليات القادمة.</li>
+        </ol>
+      </article>
+
+      <article id="admin-events" class="lesson-article">
+        <header class="lesson-header">
+          <div class="lesson-breadcrumbs">
+            <span data-i18n="cat_admin">دليل المدير الرئيسي</span>
+            <span class="sep">/</span>
+            <span data-i18n="nav_admin_events">الأنشطة والفعاليات والتسجيلات</span>
+          </div>
+          <h2 class="lesson-main-title" data-i18n="ev_title">إدارة الأنشطة والفعاليات والتسجيلات</h2>
+        </header>
+
+        <p data-i18n="ev_p1">
+          جدولة الفعاليات الميدانية والرياضية والورش التدريبية:
+        </p>
+        <ul>
+          <li><strong data-i18n="ev_f1">تحديد الموعد والمكان:</strong> <span data-i18n="ev_f1_d">كتابة التاريخ، التوقيت، والمقر (المدرسة، الصالة الرياضية، أو عبر منصة إلكترونية).</span></li>
+          <li><strong data-i18n="ev_f2">رابط التسجيل المباشر:</strong> <span data-i18n="ev_f2_d">إرفاق رابط نموذج حجز المقعد للمشاركين.</span></li>
+          <li><strong data-i18n="ev_f3">إدارة قائمة الحضور:</strong> <span data-i18n="ev_f3_d">استعراض المسجلين وفرزهم وتأكيد حضورهم في يوم الفعالية.</span></li>
+        </ul>
+      </article>
+
+      <article id="admin-supervisors" class="lesson-article">
+        <header class="lesson-header">
+          <div class="lesson-breadcrumbs">
+            <span data-i18n="cat_admin">دليل المدير الرئيسي</span>
+            <span class="sep">/</span>
+            <span data-i18n="nav_admin_supervisors">إدارة المشرفين والصلاحيات</span>
+          </div>
+          <h2 class="lesson-main-title" data-i18n="sup_mgmt_title">إدارة المشرفين وتوزيع الصلاحيات</h2>
+        </header>
+
+        <p data-i18n="sup_mgmt_p1">
+          هذه الخاصية حصرية بالمدير الرئيسي فقط، حيث يقوم بتفويض مهام إدارة أقسام محددة للمشرفين التربويين والصحيين:
+        </p>
+
+        <div class="steps-timeline">
+          <div class="step-card">
+            <div class="step-number-badge">1</div>
+            <div class="step-card-body">
+              <h4 class="step-card-title" data-i18n="sup_s1_t">إضافة مشرف جديد</h4>
+              <p class="step-card-text" data-i18n="sup_s1_d">
+                انقر على «إضافة مشرف جديد»، أدخل الاسم الكامل والبريد الإلكتروني المعتمد للمشرف، وحدد المسمى الوظيفي.
+              </p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number-badge">2</div>
+            <div class="step-card-body">
+              <h4 class="step-card-title" data-i18n="sup_s2_t">تخصيص الصلاحيات بدقة</h4>
+              <p class="step-card-text" data-i18n="sup_s2_d">
+                حدد الأقسام المسموح للمشرف بإدارتها (مثال: تفعيل صلاحية «الإذاعات الصباحية» فقط، وإيقاف صلاحيات «الاستبانات» و«الإعدادات»).
+              </p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number-badge">3</div>
+            <div class="step-card-body">
+              <h4 class="step-card-title" data-i18n="sup_s3_t">تعديل أو سحب الصلاحيات</h4>
+              <p class="step-card-text" data-i18n="sup_s3_d">
+                يمكن للمدير تعديل نطاق أي مشرف في أي وقت بإلغاء تحديد الأقسام، أو النقر على «حذف المشرف» لإنهاء صلاحية دخوله تمامًا.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout callout-tip">
+          <div class="callout-icon">🛡️</div>
+          <div class="callout-content">
+            <div class="callout-title" data-i18n="sup_rule_t">قاعدة الأمان الذهبية</div>
+            <div data-i18n="sup_rule_d">
+              المشرفون لا يستطيعون رؤية شاشة إدارة المشرفين، ولا يستطيعون منح أنفسهم أو غيرهم أي صلاحيات إضافية.
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article id="admin-saving" class="lesson-article">
+        <header class="lesson-header">
+          <div class="lesson-breadcrumbs">
+            <span data-i18n="cat_admin">دليل المدير الرئيسي</span>
+            <span class="sep">/</span>
+            <span data-i18n="nav_admin_saving">حفظ وتأكيد التغييرات</span>
+          </div>
+          <h2 class="lesson-main-title" data-i18n="save_title">حفظ التغييرات والتأكد من ظهورها للزوار</h2>
+        </header>
+
+        <p data-i18n="save_p1">
+          لضمان وصول التعديلات إلى زوار المنصة دون فقدان للبيانات:
+        </p>
+
+        <ol>
+          <li data-i18n="save_s1">بعد الانتهاء من إدخال أي نص أو رابط، اضغط على زر <strong>«حفظ التغييرات» (Save Changes)</strong> باللون الأخضر.</li>
+          <li data-i18n="save_s2">انتظر حتى تظهر لك رسالة التنبيه الخضراء: <em>«تم الحفظ بنجاح»</em>. لا تغلق المتصفح قبل اكتمال الحفظ.</li>
+          <li data-i18n="save_s3">افتح نافذة تصفح خفي (Incognito Window) أو قم بتحديث صفحة الموقع الرئيسية بالضغط على <code>Ctrl + F5</code> لمسح الكاش والتأكد من ظهور المادة الجديدة مباشرة للزوار.</li>
+        </ol>
+      </article>
+
+      <!-- ========================================== -->
+      <!-- SECTION 3: SUPERVISORS GUIDE -->
+      <!-- ========================================== -->
+      <article id="supervisor-login" class="lesson-article">
+        <header class="lesson-header">
+          <div class="lesson-breadcrumbs">
+            <span data-i18n="cat_supervisors">دليل المشرفين</span>
+            <span class="sep">/</span>
+            <span data-i18n="nav_sup_login">تسجيل الدخول والصلاحيات</span>
+          </div>
+          <div class="lesson-title-row">
+            <h2 class="lesson-main-title" data-i18n="sup_login_title">تسجيل دخول المشرف والتعرف على الصلاحيات</h2>
+            <span class="lesson-role-pill badge-supervisor" data-i18n="badge_supervisor">المشرف المعتمد</span>
+          </div>
+        </header>
+
+        <p data-i18n="sup_login_p1">
+          يدخل المشرف بحسابه الإلكتروني المعتمد الذي أضافه له المدير الرئيسي. عند تسجيل الدخول، تعرض المنصة فقط الأقسام المخصصة لهذا المشرف وفقًا لما حدده المدير.
+        </p>
+
+        <div class="callout callout-tip">
+          <div class="callout-icon">💡</div>
+          <div class="callout-content">
+            <div class="callout-title" data-i18n="sup_view_t">كيف أعرف صلاحياتي كمشرف؟</div>
+            <div data-i18n="sup_view_d">
+              بمجرد دخولك للوحة المشرف، ستظهر في القائمة الجانبية الأقسام الممنوحة لك فقط (مثلاً: الإذاعات الصباحية والأنشطة). الأقسام الأخرى التي لم يتم تفويضك بها لن تظهر لك في القائمة.
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article id="supervisor-content" class="lesson-article">
+        <header class="lesson-header">
+          <div class="lesson-breadcrumbs">
+            <span data-i18n="cat_supervisors">دليل المشرفين</span>
+            <span class="sep">/</span>
+            <span data-i18n="nav_sup_content">إدارة المحتوى الموكل</span>
+          </div>
+          <h2 class="lesson-main-title" data-i18n="sup_c_title">إضافة وتعديل وحذف المحتوى</h2>
+        </header>
+
+        <p data-i18n="sup_c_p1">
+          بإمكان المشرف إدارة محتوى قسمه بسهولة عبر الخطوات التالية:
+        </p>
+
+        <ul>
+          <li><strong data-i18n="sup_c_1">إضافة مادة جديدة:</strong> <span data-i18n="sup_c_1_d">انقر زر «إضافة جديد» داخل قسمك المتاح، واكتب العنوان والنصوص والتاريخ المطلوب.</span></li>
+          <li><strong data-i18n="sup_c_2">تعديل مادة سابقة:</strong> <span data-i18n="sup_c_2_d">انقر على أيقونة القلم (تعديل) بجانب المادة السابقة، قم بتحديث النصوص أو الروابط، ثم اضغط حفظ.</span></li>
+          <li><strong data-i18n="sup_c_3">حذف مادة:</strong> <span data-i18n="sup_c_3_d">انقر على أيقونة الحذف مع التأكيد. تنبيه: الحذف نهائي لذلك يُنصح بمراجعة المحتوى قبل الحذف.</span></li>
+        </ul>
+      </article>
+
+      <article id="supervisor-limits" class="lesson-article">
+        <header class="lesson-header">
+          <div class="lesson-breadcrumbs">
+            <span data-i18n="cat_supervisors">دليل المشرفين</span>
+            <span class="sep">/</span>
+            <span data-i18n="nav_sup_limits">حدود الصلاحية الصارمة</span>
+          </div>
+          <h2 class="lesson-main-title" data-i18n="limits_title">حدود صلاحية المشرف والأمان الإداري</h2>
+        </header>
+
+        <p data-i18n="limits_p1">
+          حرصًا على سلامة المنصة واستقرار بياناتها، تم ضبط الصلاحيات بضوابط برمجية دقيقة:
+        </p>
+
+        <div class="callout callout-critical">
+          <div class="callout-icon">⛔</div>
+          <div class="callout-content">
+            <div class="callout-title" data-i18n="limits_crit_t">تنبيهات أمنية هامة للمشرفين</div>
+            <ul>
+              <li data-i18n="limits_l1">لا يستطيع المشرف تعديل شعار المبادرة أو هوية المنصة أو العناوين العامة.</li>
+              <li data-i18n="limits_l2">لا يستطيع المشرف الدخول لقائمة المشرفين أو إضافة مشرف آخر أو تعديل صلاحياته.</li>
+              <li data-i18n="limits_l3">لا يستطيع المشرف ترقية نفسه إلى مدير رئيسي (Super Admin) تحت أي ظرف.</li>
+              <li data-i18n="limits_l4">أي محاولة وصول لروابط غير مصرح بها ستعرض رسالة: <em>«عفوًا، ليس لديك الصلاحية الكافية للوصول إلى هذا القسم»</em>.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- ========================================== -->
+      <!-- SECTION 4: USER & VISITOR GUIDE -->
+      <!-- ========================================== -->
+      <article id="user-browsing" class="lesson-article">
+        <header class="lesson-header">
+          <div class="lesson-breadcrumbs">
+            <span data-i18n="cat_users">دليل الزائر والمستخدم</span>
+            <span class="sep">/</span>
+            <span data-i18n="nav_user_browsing">تصفح أقسام المنصة</span>
+          </div>
+          <div class="lesson-title-row">
+            <h2 class="lesson-main-title" data-i18n="user_b_title">تصفح أقسام منصة عافية تُزهر</h2>
+            <span class="lesson-role-pill badge-visitor" data-i18n="badge_visitor">المستخدم والزائر</span>
+          </div>
+        </header>
+
+        <p data-i18n="user_b_p1">
+          صُممت واجهة منصة عافية تُزهر لتكون تجربة مبهجة وهادئة وسريعة لجميع الطلاب وأولياء الأمور والمعلمين والزوار دون الحاجة لتسجيل حساب مسبق للتصفح:
+        </p>
+
+        <ul>
+          <li><strong data-i18n="user_b_nav">شريط التنقل العلوي:</strong> <span data-i18n="user_b_nav_d">للوصول السريع إلى الصفحة الرئيسية، الإذاعات، المحاضرات، المقابلات، والفعاليات.</span></li>
+          <li><strong data-i18n="user_b_search">البحث والاستكشاف:</strong> <span data-i18n="user_b_search_d">يمكنك البحث عن أي نصيحة صحية أو محاضرة من خلال خانة البحث.</span></li>
+          <li><strong data-i18n="user_b_cards">البطاقات التفاعلية:</strong> <span data-i18n="user_b_cards_d">عرض أنيق لملخص الفعالية مع مؤقت زمني وتفاصيل المشاركة.</span></li>
+        </ul>
+      </article>
+
+      <article id="user-media" class="lesson-article">
+        <header class="lesson-header">
+          <div class="lesson-breadcrumbs">
+            <span data-i18n="cat_users">دليل الزائر والمستخدم</span>
+            <span class="sep">/</span>
+            <span data-i18n="nav_user_media">الإذاعات والمحاضرات والمقابلات</span>
+          </div>
+          <h2 class="lesson-main-title" data-i18n="user_m_title">الاستماع للإذاعات وحضور المحاضرات ومشاهدة المقابلات</h2>
+        </header>
+
+        <p data-i18n="user_m_p1">
+          تتيح المنصة مشغل وسائط تفاعلي مدمج:
+        </p>
+
+        <div class="steps-timeline">
+          <div class="step-card">
+            <div class="step-number-badge">📻</div>
+            <div class="step-card-body">
+              <h4 class="step-card-title" data-i18n="user_m_s1_t">الإذاعات المدرسية</h4>
+              <p class="step-card-text" data-i18n="user_m_s1_d">
+                اضغط على زر التشغيل الصوتي للاستماع المباشر للإذاعة، أو انقر على «عرض النص الكامل» لقراءتها وإلقائها في الطابور المدرسي.
+              </p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number-badge">🎥</div>
+            <div class="step-card-body">
+              <h4 class="step-card-title" data-i18n="user_m_s2_t">المحاضرات والمقابلات المرئية</h4>
+              <p class="step-card-text" data-i18n="user_m_s2_d">
+                انقر على فيديو المحاضرة لمشاهدتها بجودة عالية مع إمكانية التكبير لكامل الشاشة أو حفظ المواد الإثرائية المرفقة.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article id="user-participation" class="lesson-article">
+        <header class="lesson-header">
+          <div class="lesson-breadcrumbs">
+            <span data-i18n="cat_users">دليل الزائر والمستخدم</span>
+            <span class="sep">/</span>
+            <span data-i18n="nav_user_participate">المشاركة والتسجيل</span>
+          </div>
+          <h2 class="lesson-main-title" data-i18n="user_p_title">المشاركة في الاستبانات والتسجيل في الأنشطة</h2>
+        </header>
+
+        <p data-i18n="user_p_p1">
+          تعتبر مشاركتك ركيزة نجاح مبادرة عافية تُزهر:
+        </p>
+
+        <ol>
+          <li data-i18n="user_p_s1">انتقل إلى تبويب <strong>«الاستبانات»</strong> واضغط على الاستبانة النشطة للتعبير عن رأيك وتقييم الفعاليات.</li>
+          <li data-i18n="user_p_s2">في قسم <strong>«الأنشطة والفعاليات»</strong>، انقر على زر «سجل الآن» للفعالية المراد حضورها لإدخال بيانات التسجيل وتأكيد مقعدك.</li>
+        </ol>
+      </article>
+
+      <article id="user-devices" class="lesson-article">
+        <header class="lesson-header">
+          <div class="lesson-breadcrumbs">
+            <span data-i18n="cat_users">دليل الزائر والمستخدم</span>
+            <span class="sep">/</span>
+            <span data-i18n="nav_user_devices">التصفح بالهاتف والكمبيوتر</span>
+          </div>
+          <h2 class="lesson-main-title" data-i18n="user_dev_title">استخدام المنصة على الهواتف والأجهزة اللوحية والكمبيوتر</h2>
+        </header>
+
+        <p data-i18n="user_dev_p1">
+          تم تصميم منصة عافية تُزهر وهذا الدليل بتقنيات الويب المتجاوبة (Responsive Web Design):
+        </p>
+
+        <ul>
+          <li><strong data-i18n="dev_mobile">على الهواتف الذكية (iOS و Android):</strong> <span data-i18n="dev_mobile_d">أزرار لمس مريحة، قوائم منبثقة بسحب الشاشة، وتشغيل فوري للصوتيات بدون استهلاك زائد للبيانات.</span></li>
+          <li><strong data-i18n="dev_tablet">على الأجهزة اللوحية (iPad والتابلت):</strong> <span data-i18n="dev_tablet_d">استعراض مريح للبطاقات التوعوية ومقاطع الفيديو بجودة كاملة.</span></li>
+          <li><strong data-i18n="dev_desktop">على شاشات الكمبيوتر والسبورات الذكية:</strong> <span data-i18n="dev_desktop_d">مناسبة تمامًا للعرض الصفي والأنشطة الجماعية في المدارس.</span></li>
+        </ul>
+      </article>
+
+      <!-- ========================================== -->
+      <!-- SECTION 5: IMAGES & DIRECT LINKS GUIDE -->
+      <!-- ========================================== -->
+      <article id="image-types" class="lesson-article">
+        <header class="lesson-header">
+          <div class="lesson-breadcrumbs">
+            <span data-i18n="cat_images">دليل الصور والشعارات</span>
+            <span class="sep">/</span>
+            <span data-i18n="nav_img_types">ما هو الرابط المباشر؟</span>
+          </div>
+          <div class="lesson-title-row">
+            <h2 class="lesson-main-title" data-i18n="img_types_title">الفرق الحاسم بين أنواع روابط الصور (مهم جدًا)</h2>
+            <span class="lesson-role-pill badge-highlight" data-i18n="badge_essential">قسم جوهري</span>
+          </div>
+        </header>
+
+        <p data-i18n="img_types_p1">
+          يعد هذا القسم من أهم أجزاء هذا الدليل، حيث إن السبب الأول لعدم ظهور الصور في المنصة هو <strong>وضع رابط صفحة موقع الاستضافة</strong> بدلاً من <strong>رابط ملف الصورة المباشر الصافي</strong>.
+        </p>
+
+        <!-- Visual Direct Link Diagram -->
+        <div class="diagram-frame">
+          <img src="assets/diagram-direct-link.svg" alt="الفرق بين أنواع روابط الصور" />
+          <div class="diagram-caption" data-i18n="diagram_img_cap">رسم توضيحي: مقارنة بصرية شاملة بين رابط صفحة العرض، كود HTML، والرابط المباشر المعتمد</div>
+        </div>
+
+        <div class="callout callout-warning">
+          <div class="callout-icon">💡</div>
+          <div class="callout-content">
+            <div class="callout-title" data-i18n="img_note_ext_t">ملاحظة تقنية حول امتداد الصورة:</div>
+            <div data-i18n="img_note_ext_d">
+              لا تفترض أن كل رابط مباشر يجب أن ينتهي بامتداد ظاهر مثل <code>.jpg</code> أو <code>.png</code>، بل المعيار الأكيد هو أن الرابط المباشر عند فتحه في المتصفح <strong>يفتح لك الصورة وحدها في وسط الشاشة بخلفية سوداء أو رمادية دون أي إعلانات أو أزرار أو نصوص للموقع المضيف</strong>.
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article id="image-upload-steps" class="lesson-article">
+        <header class="lesson-header">
+          <div class="lesson-breadcrumbs">
+            <span data-i18n="cat_images">دليل الصور والشعارات</span>
+            <span class="sep">/</span>
+            <span data-i18n="nav_img_upload">الخطوات الـ 12 للرفع</span>
+          </div>
+          <h2 class="lesson-main-title" data-i18n="img_steps_title">الخطوات الـ 12 بالتفصيل لتحويل الصور لروابط مباشرة (مثال ImgBB)</h2>
+        </header>
+
+        <p data-i18n="img_steps_p1">
+          نستعرض هنا الخطوات العملية خطوة بخطوة باستخدام موقع استضافة الصور العالمي الشهير <strong>ImgBB (<a href="https://imgbb.com/" target="_blank" rel="noopener noreferrer">https://imgbb.com/</a>)</strong>:
+        </p>
+
+        <!-- Steps Diagram Flow -->
+        <div class="diagram-frame">
+          <img src="assets/diagram-steps-imgbb.svg" alt="مخطط مراحل رفع الصور على ImgBB" />
+          <div class="diagram-caption" data-i18n="diagram_steps_cap">مخطط تسلسل المراحل من رفع الصورة حتى الحفظ وظهورها للمستخدمين</div>
+        </div>
+
+        <div class="steps-timeline">
+          
+          <div class="step-card">
+            <div class="step-number-badge">1</div>
+            <div class="step-card-body">
+              <h4 class="step-card-title" data-i18n="step_1_t">فتح موقع استضافة الصور</h4>
+              <p class="step-card-text" data-i18n="step_1_d">
+                افتح متصفحك واذهب إلى الموقع: <a href="https://imgbb.com/" target="_blank" rel="noopener noreferrer"><strong>https://imgbb.com/</strong></a>.
+              </p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number-badge">2</div>
+            <div class="step-card-body">
+              <h4 class="step-card-title" data-i18n="step_2_t">الضغط على زر «بدء الرفع»</h4>
+              <p class="step-card-text" data-i18n="step_2_d">
+                انقر على الزر الأزرق الكبير في وسط الصفحة بعنوان <strong>«Start uploading»</strong> أو <strong>«بدء الرفع»</strong>.
+              </p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number-badge">3</div>
+            <div class="step-card-body">
+              <h4 class="step-card-title" data-i18n="step_3_t">اختيار الصورة من جهازك</h4>
+              <p class="step-card-text" data-i18n="step_3_d">
+                اختر ملف الصورة من جهاز الكمبيوتر أو مكتبة صور الجوال. تأكد من أن الصورة واضحة وذات دقة ملائمة.
+              </p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number-badge">4</div>
+            <div class="step-card-body">
+              <h4 class="step-card-title" data-i18n="step_4_t">ضبط خيار مدة الاحتفاظ بالصورة (هام)</h4>
+              <p class="step-card-text" data-i18n="step_4_d">
+                في القائمة المنسدلة <em>«Auto delete image»</em>، اختر <strong>«Don't autodelete» (عدم الحذف التلقائي)</strong>، حتى تظل صورتك تعمل دائمًا في المنصة دون أن تنتهي صلاحيتها بعد أيام.
+              </p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number-badge">5</div>
+            <div class="step-card-body">
+              <h4 class="step-card-title" data-i18n="step_5_t">الضغط على زر «Upload» (رفع)</h4>
+              <p class="step-card-text" data-i18n="step_5_d">
+                انقر على زر الرفع الأخضر بالأسفل.
+              </p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number-badge">6</div>
+            <div class="step-card-body">
+              <h4 class="step-card-title" data-i18n="step_6_t">انتظار اكتمال شريط الرفع</h4>
+              <p class="step-card-text" data-i18n="step_6_d">
+                انتظر بضع ثوانٍ حتى يصل المؤشر إلى 100% وتظهر شاشة اكتمال الرفع بنجاح (Upload Complete).
+              </p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number-badge">7</div>
+            <div class="step-card-body">
+              <h4 class="step-card-title" data-i18n="step_7_t">فتح خيارات الروابط المنسدلة (Embed codes)</h4>
+              <p class="step-card-text" data-i18n="step_7_d">
+                ستجد قائمة منسدلة أسفل المعاينة بعنوان <strong>«Embed codes»</strong> أو <strong>«أكواد التضمين»</strong>. افتح هذه القائمة.
+              </p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number-badge">8</div>
+            <div class="step-card-body">
+              <h4 class="step-card-title" data-i18n="step_8_t">اختيار «Direct links» (الروابط المباشرة)</h4>
+              <p class="step-card-text" data-i18n="step_8_d">
+                من القائمة المنسدلة، حدد خيار <strong>«Direct links»</strong>. هذا هو الخيار الحاسم والمطلوب لمنصة عافية تُزهر!
+              </p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number-badge">9</div>
+            <div class="step-card-body">
+              <h4 class="step-card-title" data-i18n="step_9_t">نسخ الرابط المباشر</h4>
+              <p class="step-card-text" data-i18n="step_9_d">
+                اضغط على زر <strong>«Copy» (نسخ)</strong> بجوار الرابط. ستلاحظ أن الرابط يبدأ بـ <code>https://i.ibb.co/...</code> (مع حرف i الخاص بالخادم المباشر).
+              </p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number-badge">10</div>
+            <div class="step-card-body">
+              <h4 class="step-card-title" data-i18n="step_10_t">اختبار الرابط في تبويب جديد قبل الاستخدام</h4>
+              <p class="step-card-text" data-i18n="step_10_d">
+                افتح تبويبًا جديدًا في المتصفح، والصق الرابط واضغط Enter. إذا ظهرت الصورة وحدها في وسط المتصفح دون موقع ImgBB، فالرابط ممتاز وجاهز للاستخدام!
+              </p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number-badge">11</div>
+            <div class="step-card-body">
+              <h4 class="step-card-title" data-i18n="step_11_t">العودة للوحة المنصة ولصق الرابط</h4>
+              <p class="step-card-text" data-i18n="step_11_d">
+                ارجع إلى لوحة تحكم منصة عافية تُزهر، والصق الرابط في حقل الصورة (سواء كان غلاف محاضرة، صورة إذاعة، أو شعار المنصة).
+              </p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number-badge">12</div>
+            <div class="step-card-body">
+              <h4 class="step-card-title" data-i18n="step_12_t">حفظ التعديلات والتأكد من ظهورها</h4>
+              <p class="step-card-text" data-i18n="step_12_d">
+                انقر على زر «حفظ التعديلات»، ثم تفقد موقع المنصة للتأكد من ظهور الصورة بدقة ووضوح للزوار.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </article>
+
+      <!-- INTERACTIVE IMAGE LINK TESTER -->
+      <article id="image-tester" class="lesson-article">
+        <header class="lesson-header">
+          <div class="lesson-breadcrumbs">
+            <span data-i18n="cat_images">دليل الصور والشعارات</span>
+            <span class="sep">/</span>
+            <span data-i18n="nav_img_tester">فحص ومعاينة الرابط المباشر</span>
+          </div>
+          <h2 class="lesson-main-title" data-i18n="tester_main_title">أداة فحص واختبار روابط الصور التفاعلية</h2>
+        </header>
+
+        <p data-i18n="tester_desc">
+          يمكنك الآن اختبار أي رابط صورة قبل إدراجه في لوحة تحكم منصة عافية تُزهر للتأكد من أنه رابط مباشر سليم ويعمل دون أخطاء:
+        </p>
+
+        <!-- Interactive Tester Component -->
+        <div class="tester-box">
+          <div class="tester-header">
+            <span style="font-size: 1.5rem;">🧪</span>
+            <div class="tester-title" data-i18n="tester_box_title">معمل فحص الرابط المباشر</div>
+          </div>
+          <p style="font-size: 0.88rem; color: var(--text-muted);" data-i18n="tester_box_subtitle">
+            الصق رابط الصورة الذي حصلت عليه واضغط «فحص الرابط» لمعاينته وتحليله فورًا:
+          </p>
+
+          <div class="tester-input-row">
+            <input type="url" id="imageTesterInput" class="tester-input" placeholder="https://i.ibb.co/example/photo.jpg" aria-label="رابط الصورة للاختبار" />
+            <button type="button" id="testImageBtn" class="btn-test">
+              <span>🔍</span>
+              <span data-i18n="tester_btn_run">فحص الرابط ومعاينته</span>
+            </button>
+          </div>
+
+          <!-- Dynamic Analysis Result -->
+          <div id="testerResultArea" class="tester-result-area">
+            <div id="testerBadge" class="tester-feedback-badge"></div>
+            <p id="testerMessage" style="font-size: 0.88rem; line-height: 1.6;"></p>
+            
+            <div class="tester-preview-container" id="testerPreviewWrap">
+              <img id="testerPreviewImg" class="tester-preview-img" alt="معاينة الصورة" />
+            </div>
+          </div>
+        </div>
+
+        <div class="callout callout-tip">
+          <div class="callout-icon">💡</div>
+          <div class="callout-content">
+            <div class="callout-title" data-i18n="tester_tip_t">أمثلة سريعة للتجربة:</div>
+            <div data-i18n="tester_tip_d">
+              يمكنك تجربة كتابة رابط صفحة خاطئ مثل <code>https://imgbb.com/sample</code> لرؤية التنبيه، أو تجربة رابط مباشر لصورة الشعار لمعاينته فورًا!
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article id="image-logos" class="lesson-article">
+        <header class="lesson-header">
+          <div class="lesson-breadcrumbs">
+            <span data-i18n="cat_images">دليل الصور والشعارات</span>
+            <span class="sep">/</span>
+            <span data-i18n="nav_img_logos">تغيير الشعارات</span>
+          </div>
+          <h2 class="lesson-main-title" data-i18n="logo_guide_title">طريقة تغيير شعار المبادرة وشعار وزارة التعليم</h2>
+        </header>
+
+        <p data-i18n="logo_guide_p1">
+          شعار المبادرة وشعار وزارة التعليم هما عنوان الهوية البصرية الرسمية لمنصة عافية تُزهر:
+        </p>
+
+        <ul>
+          <li><strong data-i18n="lg_1">توفر الخاصية في لوحة الإدارة:</strong> <span data-i18n="lg_1_d">تعتمد إمكانية تغيير الشعارين على وجود الحقول المخصصة لهما في لوحة تحكم المدير الرئيسي للموقع.</span></li>
+          <li><strong data-i18n="lg_2">صيغة الشعار الموصى بها:</strong> <span data-i18n="lg_2_d">يُفضل بشدة استخدام صيغة PNG أو SVG ذات خلفية شفافة للحصول على مظهر احترافي فائق النقاء يتناغم مع الألوان الفاتحة والداكنة.</span></li>
+          <li><strong data-i18n="lg_3">الأبعاد المثالية:</strong> <span data-i18n="lg_3_d">أبعاد مربعة أو أفقية بنسبة ارتفاع مناسبة (مثلاً 500x120 بكسل للشعار الأفقي، أو 256x256 للأيقونة).</span></li>
+          <li><strong data-i18n="lg_4">الاختبار بعد الحفظ:</strong> <span data-i18n="lg_4_d">بعد حفظ الرابط الجديد، تحقق من ظهور الشعار في رأس الموقع على الهاتف والكمبيوتر وفي الوضعين الفاتح والداكن.</span></li>
+        </ul>
+      </article>
+
+      <article id="image-best-practices" class="lesson-article">
+        <header class="lesson-header">
+          <div class="lesson-breadcrumbs">
+            <span data-i18n="cat_images">دليل الصور والشعارات</span>
+            <span class="sep">/</span>
+            <span data-i18n="nav_img_security">أمان وخصوصية الصور</span>
+          </div>
+          <h2 class="lesson-main-title" data-i18n="sec_title">ملاحظات أمنية وإرشادات لحماية خصوصية الصور</h2>
+        </header>
+
+        <div class="steps-timeline">
+          <div class="step-card">
+            <div class="step-number-badge">💾</div>
+            <div class="step-card-body">
+              <h4 class="step-card-title" data-i18n="sec_1_t">الاحتفاظ بنسخة أصلية في جهازك</h4>
+              <p class="step-card-text" data-i18n="sec_1_d">
+                احتفظ دائمًا بنسخة احتياطية على جهاز الكمبيوتر أو Google Drive لجميع الصور والشعارات الأصلية للمبادرة حتى لا تفقدها إذا حدث أي تغيير على موقع الاستضافة.
+              </p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number-badge">🚫</div>
+            <div class="step-card-body">
+              <h4 class="step-card-title" data-i18n="sec_2_t">عدم رفع معلومات شخصية أو وثائق خاصة</h4>
+              <p class="step-card-text" data-i18n="sec_2_d">
+                لا ترفع صورًا تحتوي أرقام هوية، سجلات مدنية، أرقام هواتف شخصية، أو صورًا خاصة بالطلاب بدون موافقة رسمية موثقة إلى مواقع استضافة عامة.
+              </p>
+            </div>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number-badge">🔒</div>
+            <div class="step-card-body">
+              <h4 class="step-card-title" data-i18n="sec_3_t">عدم وضع مفاتيح API أو كلمات مرور بالملفات</h4>
+              <p class="step-card-text" data-i18n="sec_3_d">
+                يُمنع منعًا باتًا تضمين أي كلمات مرور، رموز سرية، أو مفاتيح برمجية داخل نصوص المقالات أو شفرات JavaScript العامة.
+              </p>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ========================================== -->
+      <!-- SECTION 6: TROUBLESHOOTING & FAQS -->
+      <!-- ========================================== -->
+      <article id="faq-section" class="lesson-article">
+        <header class="lesson-header">
+          <div class="lesson-breadcrumbs">
+            <span data-i18n="cat_faq">المشكلات الشائعة</span>
+            <span class="sep">/</span>
+            <span data-i18n="nav_faq">الأسئلة الشائعة والحلول</span>
+          </div>
+          <div class="lesson-title-row">
+            <h2 class="lesson-main-title" data-i18n="faq_main_title">حل المشكلات الشائعة (دليل تفاعلي)</h2>
+            <span class="lesson-role-pill badge-highlight" data-i18n="pill_faq">إجابات عملية فورية</span>
+          </div>
+        </header>
+
+        <p data-i18n="faq_intro">
+          اضغط على أي مشكلة لاستعراض خطوات الحل بالتفصيل:
+        </p>
+
+        <div class="faq-accordion-group">
+          
+          <!-- FAQ 1 -->
+          <div class="faq-item">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span data-i18n="faq_q1">لماذا لا تظهر لوحة الإدارة بعد تسجيل الدخول؟</span>
+              <span class="faq-icon-arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq_a1_p">السبب الأكثر شيوعًا هو تسجيل الدخول بحساب Google مختلف عن البريد الإلكتروني المعتمد للمدير الرئيسي. خطوات الحل:</p>
+              <ol>
+                <li data-i18n="faq_a1_s1">اضغط على زر تسجيل الخروج من المنصة.</li>
+                <li data-i18n="faq_a1_s2">سجل الدخول مجددًا، واختر البريد الإلكتروني الإداري المعتمد بدقة.</li>
+                <li data-i18n="faq_a1_s3">قم بتحديث الصفحة بالضغط على <code>Ctrl + F5</code> (أو سحب الصفحة للأسفل بالهاتف).</li>
+              </ol>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span data-i18n="faq_q2">ماذا أفعل إذا ظهرت رسالة «مستخدم غير مصرح له» (Unauthorized)؟</span>
+              <span class="faq-icon-arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq_a2_p">هذا يعني أن حسابك مسجل كزائر عادي أو كمشرف ولكن لا يملك صلاحية للوصول إلى هذا القسم المحدد. خطوات الحل:</p>
+              <ul>
+                <li data-i18n="faq_a2_s1">إذا كنت مشرفًا: تواصل مع المدير الرئيسي للمنصة ليقوم بتفعيل صلاحية هذا القسم لحسابك من لوحة إدارة المشرفين.</li>
+                <li data-i18n="faq_a2_s2">إذا كنت المدير الرئيسي: تأكد من أنك لم تسجل الدخول من حساب شخصي آخر بالخطأ.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span data-i18n="faq_q3">لماذا لا تظهر الصورة وتظهر أيقونة معطوبة بعد الحفظ؟</span>
+              <span class="faq-icon-arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq_a3_p">هذا يعني بنسبة 99% أنك قمت بنسخ رابط صفحة العرض (Webpage URL) وليس الرابط المباشر للملف (Direct Link). خطوات الحل:</p>
+              <ol>
+                <li data-i18n="faq_a3_s1">تأكد أن رابط ImgBB يبدأ بـ <code>https://i.ibb.co/</code> وليس <code>https://imgbb.com/</code>.</li>
+                <li data-i18n="faq_a3_s2">استخدم <a href="#image-tester">أداة فحص واختبار الروابط المباشرة</a> في هذا الدليل للتأكد من الرابط قبل حفظه.</li>
+                <li data-i18n="faq_a3_s3">تأكد من عدم انتهاء صلاحية الصورة عبر اختيار Don't autodelete أثناء الرفع.</li>
+              </ol>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span data-i18n="faq_q4">كيف أحصل على رابط مباشر للصورة بطريقة مضمونة؟</span>
+              <span class="faq-icon-arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq_a4">
+                راجع <a href="#image-upload-steps">الخطوات الـ 12 بالتفصيل</a> في هذا الدليل. في موقع ImgBB، من قائمة Embed codes اختر دائمًا <strong>Direct links</strong>، ثم اضغط Copy.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div class="faq-item">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span data-i18n="faq_q5">لماذا لا يتم حفظ التعديلات عند الضغط على زر الحفظ؟</span>
+              <span class="faq-icon-arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq_a5_p">الأسباب المحتملة:</p>
+              <ul>
+                <li data-i18n="faq_a5_s1">انقطاع اتصال الإنترنت لحظة الحفظ.</li>
+                <li data-i18n="faq_a5_s2">وجود حقل إلزامي فارغ (مثل عنوان المحاضرة أو التاريخ). تحقق من وجود أي تنبيه أحمر حول الحقول.</li>
+                <li data-i18n="faq_a5_s3">انتهاء جلسة تسجيل الدخول (Session Timeout). قم بتسجيل الدخول مرة أخرى ثم احفظ.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div class="faq-item">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span data-i18n="faq_q6">لماذا تعود البيانات إلى حالتها السابقة عند تحديث الصفحة؟</span>
+              <span class="faq-icon-arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq_a6">
+                هذا يحدث عادة عندما يقوم المتصفح بعرض النسخة المخزنة مؤقتًا (Cached Copy). اضغط على <code>Ctrl + Shift + R</code> أو <code>Ctrl + F5</code> في الكمبيوتر لإجبار المتصفح على تحميل أحدث نسخة من الخادم.
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 7 -->
+          <div class="faq-item">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span data-i18n="faq_q7">ماذا أفعل إذا لم يعمل تسجيل الدخول بحساب Google؟</span>
+              <span class="faq-icon-arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq_a7">
+                تأكد من أن متصفحك لا يحظر النوافذ المنبثقة (Pop-ups blocked)، واسمح بنوافذ Google المصرحة لمنصة عافية تُزهر، أو جرب فتح الرابط في متصفح حديث (Chrome / Edge / Safari).
+              </p>
+            </div>
+          </div>
+
+          <!-- FAQ 8 -->
+          <div class="faq-item">
+            <button type="button" class="faq-trigger" aria-expanded="false">
+              <span data-i18n="faq_q8">كيف أغيّر لغة الدليل أو أفعّل الوضع الداكن (Dark Mode)؟</span>
+              <span class="faq-icon-arrow">▼</span>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq_a8">
+                في أعلى شريط التنقل الرئيسي للدليل ستجد زر <strong>English / العربية</strong> للتبديل الفوري بين اللغتين وتغيير اتجاه الصفحة، وبجانبه زر أيقونة <strong>الشمس/القمر</strong> للتبديل بين الوضع الفاتح والداكن. يتم حفظ خياراتك تلقائيًا في جهازك للمرات القادمة!
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </article>
+
+      <!-- Bottom Next / Previous Lesson Navigation -->
+      <nav class="lesson-navigation-footer" aria-label="تنقل بين الدروس">
+        <button type="button" class="nav-lesson-btn" id="prevLessonBtn">
+          <span class="direction-label" data-i18n="prev_lesson">← الدرس السابق</span>
+          <span class="target-title" id="prevLessonTitle">مرحبًا بك في الدليل</span>
+        </button>
+
+        <button type="button" class="nav-lesson-btn" id="nextLessonBtn" style="margin-inline-start: auto; text-align: end;">
+          <span class="direction-label" data-i18n="next_lesson">الدرس التالي →</span>
+          <span class="target-title" id="nextLessonTitle">عن منصة عافية تُزهر</span>
+        </button>
+      </nav>
+
+    </main>
+  </div>
+
+  <!-- Search Modal Overlay -->
+  <div class="search-modal-backdrop" id="searchModalBackdrop" aria-modal="true" role="dialog">
+    <div class="search-modal-dialog">
+      <div class="search-modal-header">
+        <span>🔍</span>
+        <input type="text" id="searchModalInput" class="search-modal-input" placeholder="ابحث عن: رفع الصور، تسجيل الدخول، المشرفين..." autocomplete="off" />
+        <button type="button" id="closeSearchModalBtn" style="font-size: 1.25rem; color: var(--text-faint); padding: 0.25rem 0.5rem;" aria-label="إغلاق البحث">✕</button>
+      </div>
+      
+      <!-- Filter category pills inside search modal -->
+      <div class="search-filter-pills" id="searchPillsWrap">
+        <button type="button" class="filter-pill active" data-filter="all" data-i18n="filter_all">الكل</button>
+        <button type="button" class="filter-pill" data-filter="admin" data-i18n="filter_admin">المدير الرئيسي</button>
+        <button type="button" class="filter-pill" data-filter="supervisor" data-i18n="filter_sup">المشرفون</button>
+        <button type="button" class="filter-pill" data-filter="visitor" data-i18n="filter_vis">المستخدم والزائر</button>
+        <button type="button" class="filter-pill" data-filter="images" data-i18n="filter_img">الصور والشعارات</button>
+        <button type="button" class="filter-pill" data-filter="faq" data-i18n="filter_faq">حل المشكلات</button>
+      </div>
+
+      <!-- Live Search Results List -->
+      <div class="search-modal-results" id="searchResultsList">
+        <!-- Results injected dynamically via script.js -->
+      </div>
+
+      <div class="search-modal-footer">
+        <div><kbd>Esc</kbd> <span data-i18n="search_esc">للإغلاق</span></div>
+        <div><kbd>Enter</kbd> <span data-i18n="search_enter">للانتقال للموضوع</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Back to Top Button -->
+  <button type="button" class="back-to-top-btn" id="backToTopBtn" aria-label="العودة لأعلى الصفحة" title="العودة لأعلى الصفحة">
+    ↑
+  </button>
+
+  <!-- Floating Toast Notification -->
+  <div class="toast-notice" id="toastNotice"></div>
+
+  <!-- Guide Footer -->
+  <footer class="guide-site-footer">
+    <div class="footer-inner">
+      <div style="display: flex; align-items: center; gap: 0.5rem;">
+        <img src="assets/favicon.svg" width="28" height="28" alt="عافية تُزهر" />
+        <strong style="color: var(--primary-700); font-size: 1rem;" data-i18n="footer_brand">منصة عافية تُزهِـر • Blooming Wellness</strong>
+      </div>
+      <p class="footer-text" data-i18n="footer_copy">
+        دليل المستخدم الإلكتروني الشامل والمستقل | صُمم لدعم ونشر المعرفة الصحية المدرسية وتعزيز عافية الجميع.
+      </p>
+      <div class="footer-links">
+        <a href="https://amoal2030.github.io/Blooming-wellness/" target="_blank" rel="noopener noreferrer" data-i18n="footer_link_platform">الموقع الرسمي للمبادرة ↗</a>
+        <a href="#intro" data-i18n="footer_link_top">العودة للبداية</a>
+        <a href="#faq-section" data-i18n="footer_link_faq">الأسئلة الشائعة</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vanilla JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>

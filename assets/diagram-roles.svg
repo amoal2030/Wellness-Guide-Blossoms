@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" width="100%" height="100%">
+  <defs>
+    <style>
+      .main-title { font-family: 'Cairo', 'Tajawal', sans-serif; font-size: 22px; font-weight: 800; fill: #065f46; }
+      .sub-title { font-family: 'Cairo', 'Tajawal', sans-serif; font-size: 14px; fill: #4b5563; }
+      .tier-title { font-family: 'Cairo', 'Tajawal', sans-serif; font-size: 17px; font-weight: 800; }
+      .tier-badge { font-family: 'Cairo', 'Tajawal', sans-serif; font-size: 12px; font-weight: 700; }
+      .item-text { font-family: 'Cairo', 'Tajawal', sans-serif; font-size: 13px; fill: #334155; }
+    </style>
+    <filter id="roleShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="920" height="460" rx="20" fill="#f8fafc" stroke="#e2e8f0"/>
+
+  <!-- Header -->
+  <g transform="translate(460, 40)" text-anchor="middle">
+    <text class="main-title" y="0">مصفوفة صلاحيات وأدوار منصة عافية تُزهر</text>
+    <text class="sub-title" y="26">توزيع دقيق للصلاحيات لضمان أمان المنصة واستقرار المحتوى التوعوي</text>
+  </g>
+
+  <!-- Column 1: المدير الرئيسي -->
+  <g transform="translate(35, 90)" filter="url(#roleShadow)">
+    <rect width="265" height="340" rx="16" fill="#ffffff" stroke="#10b981" stroke-width="2"/>
+    <rect width="265" height="50" rx="16" fill="#ecfdf5"/>
+    <rect y="35" width="265" height="15" fill="#ecfdf5"/>
+    <circle cx="35" cy="25" r="14" fill="#059669"/>
+    <text x="35" y="30" font-family="'Cairo', sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">👑</text>
+    <text x="58" y="31" class="tier-title" fill="#065f46">المدير الرئيسي</text>
+    <rect x="180" y="14" width="70" height="22" rx="11" fill="#10b981"/>
+    <text x="215" y="29" class="tier-badge" fill="#ffffff" text-anchor="middle">كامل التحكم</text>
+
+    <!-- Checklist -->
+    <g transform="translate(20, 75)">
+      <text class="item-text" y="0">🛡️ تسجيل الدخول بحساب Google المعتمد</text>
+      <text class="item-text" y="32">🎨 ضبط إعدادات المنصة وتغيير الشعارات</text>
+      <text class="item-text" y="64">👥 إدارة المشرفين (إضافة، تعديل، حذف)</text>
+      <text class="item-text" y="96">🔐 تعيين الصلاحيات المخصصة لكل مشرف</text>
+      <text class="item-text" y="128">📻 إدارة كافة الأقسام (الإذاعات، المحاضرات)</text>
+      <text class="item-text" y="160">📝 إدارة الاستبانات والفعاليات والتسجيلات</text>
+      <text class="item-text" y="192">📊 متابعة الإحصائيات الشاملة للمنصة</text>
+      <text class="item-text" y="224">💾 اعتماد وحفظ التغييرات النهائية</text>
+    </g>
+  </g>
+
+  <!-- Column 2: المشرفون -->
+  <g transform="translate(325, 90)" filter="url(#roleShadow)">
+    <rect width="265" height="340" rx="16" fill="#ffffff" stroke="#3b82f6" stroke-width="2"/>
+    <rect width="265" height="50" rx="16" fill="#eff6ff"/>
+    <rect y="35" width="265" height="15" fill="#eff6ff"/>
+    <circle cx="35" cy="25" r="14" fill="#2563eb"/>
+    <text x="35" y="30" font-family="'Cairo', sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">💼</text>
+    <text x="58" y="31" class="tier-title" fill="#1e40af">المشرف المعتمد</text>
+    <rect x="175" y="14" width="75" height="22" rx="11" fill="#3b82f6"/>
+    <text x="212" y="29" class="tier-badge" fill="#ffffff" text-anchor="middle">صلاحية محددة</text>
+
+    <!-- Checklist -->
+    <g transform="translate(20, 75)">
+      <text class="item-text" y="0">🔑 تسجيل الدخول بحسابه المعين</text>
+      <text class="item-text" y="32">📂 الوصول للأقسام الممنوحة له فقط</text>
+      <text class="item-text" y="64">➕ إضافة محتوى جديد (محاضرة/إذاعة...)</text>
+      <text class="item-text" y="96">✏️ تعديل وحذف المحتوى الخاص بقسمه</text>
+      <text class="item-text" y="128">🖼️ رفع وإدراج روابط الصور المباشرة</text>
+      <text class="item-text" y="160" fill="#dc2626" font-weight="700">🚫 لا يمكنه تعديل إعدادات أو شعار المنصة</text>
+      <text class="item-text" y="192" fill="#dc2626" font-weight="700">🚫 لا يمكنه ترقية نفسه لمدير رئيسي</text>
+      <text class="item-text" y="224" fill="#dc2626" font-weight="700">🚫 لا يمكنه إدارة حسابات المشرفين الآخرين</text>
+    </g>
+  </g>
+
+  <!-- Column 3: المستخدمون والزوار -->
+  <g transform="translate(615, 90)" filter="url(#roleShadow)">
+    <rect width="265" height="340" rx="16" fill="#ffffff" stroke="#8b5cf6" stroke-width="2"/>
+    <rect width="265" height="50" rx="16" fill="#f5f3ff"/>
+    <rect y="35" width="265" height="15" fill="#f5f3ff"/>
+    <circle cx="35" cy="25" r="14" fill="#7c3aed"/>
+    <text x="35" y="30" font-family="'Cairo', sans-serif" font-size="14" fill="#ffffff" text-anchor="middle">🌱</text>
+    <text x="58" y="31" class="tier-title" fill="#5b21b6">المستخدم والزائر</text>
+    <rect x="180" y="14" width="70" height="22" rx="11" fill="#8b5cf6"/>
+    <text x="215" y="29" class="tier-badge" fill="#ffffff" text-anchor="middle">استعراض عام</text>
+
+    <!-- Checklist -->
+    <g transform="translate(20, 75)">
+      <text class="item-text" y="0">🌐 تصفح كافة أقسام المنصة التوعوية</text>
+      <text class="item-text" y="32">📻 الاستماع للإذاعات الصباحية المسجلة</text>
+      <text class="item-text" y="64">🎥 حضور ومشاهدة المحاضرات والمقابلات</text>
+      <text class="item-text" y="96">📋 المشاركة في الاستبانات وإبداء الرأي</text>
+      <text class="item-text" y="128">🗓️ الاطلاع على روزنامة الفعاليات الصحية</text>
+      <text class="item-text" y="160">📝 التسجيل في الورش والأنشطة المتاحة</text>
+      <text class="item-text" y="192">📱 التصفح عبر الهواتف واللوحيات بسلاسة</text>
+      <text class="item-text" y="224" fill="#64748b">🔒 وصول للقراءة والمشاركة العامة فقط</text>
+    </g>
+  </g>
+</svg>

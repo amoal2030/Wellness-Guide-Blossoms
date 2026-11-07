@@ -1,0 +1,6 @@
+{
+  "name": "دليل مستخدم منصة عافية تُزهر - Afiya Tazhar User Guide",
+  "description": "الدليل الإلكتروني الشامل والمستقل لاستخدام وإدارة منصة عافية تُزهر للمدير الرئيسي والمشرفين والزوار.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

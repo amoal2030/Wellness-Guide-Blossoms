@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" width="100%" height="100%">
+  <defs>
+    <style>
+      .title { font-family: 'Cairo', 'Tajawal', sans-serif; font-size: 22px; font-weight: 800; fill: #065f46; }
+      .desc { font-family: 'Cairo', 'Tajawal', sans-serif; font-size: 14px; fill: #4b5563; }
+      .card-title { font-family: 'Cairo', 'Tajawal', sans-serif; font-size: 18px; font-weight: 700; }
+      .code-box { font-family: 'Courier New', monospace; font-size: 13px; }
+      .badge { font-family: 'Cairo', 'Tajawal', sans-serif; font-size: 12px; font-weight: 700; }
+    </style>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="480" rx="20" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+
+  <!-- Header -->
+  <g transform="translate(450, 40)" text-anchor="middle">
+    <text class="title" y="0">الفرق بين أنواع روابط الصور (مهم جدًا للمشرفين والمديرين)</text>
+    <text class="desc" y="26">يجب استخدام الرابط المباشر فقط لضمان ظهور الصور في المنصة بشكل فوري وصحيح</text>
+  </g>
+
+  <!-- Card 1: ❌ رابط صفحة الاستضافة (Webpage URL) -->
+  <g transform="translate(40, 95)" filter="url(#shadow)">
+    <rect width="250" height="350" rx="16" fill="#ffffff" stroke="#fca5a5" stroke-width="2"/>
+    <rect width="250" height="44" rx="16" fill="#fee2e2"/>
+    <rect y="30" width="250" height="14" fill="#fee2e2"/>
+    <text x="125" y="28" text-anchor="middle" class="card-title" fill="#b91c1c">❌ رابط صفحة العرض</text>
+    <text x="125" y="66" text-anchor="middle" class="badge" fill="#dc2626">خطأ شائع لا يعمل في الحقول</text>
+
+    <!-- Browser illustration with page elements -->
+    <rect x="25" y="85" width="200" height="110" rx="6" fill="#f1f5f9" stroke="#cbd5e1"/>
+    <!-- Simulated web page with ads & wrapper -->
+    <rect x="35" y="95" width="180" height="15" rx="3" fill="#cbd5e1"/>
+    <rect x="35" y="115" width="90" height="40" rx="3" fill="#94a3b8"/>
+    <rect x="135" y="115" width="80" height="70" rx="3" fill="#e2e8f0"/>
+    <rect x="35" y="160" width="90" height="25" rx="3" fill="#fecaca"/>
+
+    <text x="125" y="215" text-anchor="middle" font-family="'Cairo', sans-serif" font-size="12" fill="#64748b">صفحة إنترنت كاملة تحتوي إعلانات وهيدر</text>
+
+    <!-- Example URL box -->
+    <rect x="15" y="235" width="220" height="44" rx="8" fill="#fef2f2" stroke="#fecaca"/>
+    <text x="125" y="255" text-anchor="middle" class="code-box" fill="#991b1b">https://imgbb.com/x8Y3k</text>
+    <text x="125" y="271" text-anchor="middle" font-family="'Cairo', sans-serif" font-size="10" fill="#ef4444">ينتهي برمز معرف صفحة (بدون .jpg)</text>
+
+    <text x="125" y="310" text-anchor="middle" font-family="'Cairo', sans-serif" font-size="13" font-weight="600" fill="#dc2626">النتيجة: أيقونة صورة مكسورة 🚫</text>
+  </g>
+
+  <!-- Card 2: ❌ كود التضمين (HTML Embed Code) -->
+  <g transform="translate(325, 95)" filter="url(#shadow)">
+    <rect width="250" height="350" rx="16" fill="#ffffff" stroke="#fed7aa" stroke-width="2"/>
+    <rect width="250" height="44" rx="16" fill="#ffedd5"/>
+    <rect y="30" width="250" height="14" fill="#ffedd5"/>
+    <text x="125" y="28" text-anchor="middle" class="card-title" fill="#c2410c">❌ كود تضمين HTML</text>
+    <text x="125" y="66" text-anchor="middle" class="badge" fill="#ea580c">غير مخصص لحقول الصور</text>
+
+    <!-- Code Editor illustration -->
+    <rect x="25" y="85" width="200" height="110" rx="6" fill="#1e293b"/>
+    <circle cx="40" cy="98" r="4" fill="#ef4444"/>
+    <circle cx="52" cy="98" r="4" fill="#f59e0b"/>
+    <circle cx="64" cy="98" r="4" fill="#10b981"/>
+    <text x="35" y="125" font-family="monospace" font-size="10" fill="#38bdf8">&lt;a href="..."&gt;</text>
+    <text x="45" y="145" font-family="monospace" font-size="10" fill="#f472b6">&lt;img src="..." /&gt;</text>
+    <text x="35" y="165" font-family="monospace" font-size="10" fill="#38bdf8">&lt;/a&gt;</text>
+
+    <text x="125" y="215" text-anchor="middle" font-family="'Cairo', sans-serif" font-size="12" fill="#64748b">أكواد برمجية مخصصة للمطورين</text>
+
+    <!-- Example code box -->
+    <rect x="15" y="235" width="220" height="44" rx="8" fill="#fff7ed" stroke="#fed7aa"/>
+    <text x="125" y="255" text-anchor="middle" class="code-box" font-size="11" fill="#9a3412">&lt;img src="https://..." /&gt;</text>
+    <text x="125" y="271" text-anchor="middle" font-family="'Cairo', sans-serif" font-size="10" fill="#f97316">يحتوي وسوم HTML</text>
+
+    <text x="125" y="310" text-anchor="middle" font-family="'Cairo', sans-serif" font-size="13" font-weight="600" fill="#ea580c">النتيجة: خطأ بتنسيق الرابط ⚠️</text>
+  </g>
+
+  <!-- Card 3: ✅ الرابط المباشر (Direct Image Link) -->
+  <g transform="translate(610, 95)" filter="url(#shadow)">
+    <rect width="250" height="350" rx="16" fill="#ffffff" stroke="#86efac" stroke-width="2.5"/>
+    <rect width="250" height="44" rx="16" fill="#dcfce7"/>
+    <rect y="30" width="250" height="14" fill="#dcfce7"/>
+    <text x="125" y="28" text-anchor="middle" class="card-title" fill="#15803d">✅ الرابط المباشر (Direct Link)</text>
+    <text x="125" y="66" text-anchor="middle" class="badge" fill="#16a34a">المطلوب والمعتمد 100%</text>
+
+    <!-- Clean Image Only Canvas -->
+    <rect x="25" y="85" width="200" height="110" rx="6" fill="#ecfdf5" stroke="#a7f3d0"/>
+    <!-- Blooming Flower Graphic in center -->
+    <circle cx="125" cy="135" r="28" fill="#10b981" opacity="0.2"/>
+    <path d="M125 115 C118 126, 116 136, 125 146 C134 136, 132 126, 125 115 Z" fill="#059669"/>
+    <path d="M107 132 C116 128, 123 135, 125 146 C116 142, 110 139, 107 132 Z" fill="#34d399"/>
+    <path d="M143 132 C134 128, 127 135, 125 146 C134 142, 140 139, 143 132 Z" fill="#34d399"/>
+    <circle cx="125" cy="144" r="3.5" fill="#f59e0b"/>
+
+    <text x="125" y="215" text-anchor="middle" font-family="'Cairo', sans-serif" font-size="12" font-weight="600" fill="#047857">ملف الصورة الصافي فقط دون أي صفحة</text>
+
+    <!-- Direct URL box -->
+    <rect x="15" y="235" width="220" height="44" rx="8" fill="#f0fdf4" stroke="#86efac"/>
+    <text x="125" y="255" text-anchor="middle" class="code-box" font-weight="700" fill="#14532d">https://i.ibb.co/xyz.jpg</text>
+    <text x="125" y="271" text-anchor="middle" font-family="'Cairo', sans-serif" font-size="10" fill="#16a34a">رابط الخادم المباشر i.ibb.co</text>
+
+    <text x="125" y="310" text-anchor="middle" font-family="'Cairo', sans-serif" font-size="13" font-weight="700" fill="#15803d">النتيجة: تظهر الصورة فوراً بنجاح ✨</text>
+  </g>
+</svg>

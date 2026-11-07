@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 380" width="100%" height="100%">
+  <defs>
+    <style>
+      .step-num { font-family: 'Cairo', sans-serif; font-size: 16px; font-weight: 800; fill: #ffffff; }
+      .step-title { font-family: 'Cairo', sans-serif; font-size: 14px; font-weight: 700; fill: #0f172a; }
+      .step-desc { font-family: 'Cairo', sans-serif; font-size: 11.5px; fill: #64748b; }
+      .diagram-title { font-family: 'Cairo', sans-serif; font-size: 20px; font-weight: 800; fill: #065f46; }
+    </style>
+    <filter id="stepShadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <rect width="920" height="380" rx="16" fill="#f8fafc" stroke="#e2e8f0"/>
+
+  <text x="460" y="38" text-anchor="middle" class="diagram-title">خطوات رفع الصور والحصول على الرابط المباشر (ImgBB كمثال)</text>
+  <text x="460" y="60" text-anchor="middle" font-family="'Cairo', sans-serif" font-size="13" fill="#64748b">اتبع هذه المراحل الست لضمان عمل الصورة دون مشاكل الحجب أو الروابط الميتة</text>
+
+  <!-- Step 1 -->
+  <g transform="translate(30, 90)" filter="url(#stepShadow)">
+    <rect width="130" height="230" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+    <circle cx="65" cy="35" r="22" fill="#059669"/>
+    <text x="65" y="41" text-anchor="middle" class="step-num">1</text>
+    <text x="65" y="85" text-anchor="middle" class="step-title">فتح الموقع</text>
+    <text x="65" y="110" text-anchor="middle" class="step-desc">الدخول إلى موقع</text>
+    <text x="65" y="128" text-anchor="middle" font-family="monospace" font-size="11" fill="#059669">imgbb.com</text>
+    <text x="65" y="152" text-anchor="middle" class="step-desc">والضغط على زر</text>
+    <rect x="18" y="165" width="94" height="26" rx="6" fill="#10b981"/>
+    <text x="65" y="182" text-anchor="middle" font-family="'Cairo', sans-serif" font-size="10" font-weight="700" fill="#fff">بدء الرفع</text>
+  </g>
+
+  <!-- Arrow 1-2 -->
+  <path d="M165 200 L180 200" stroke="#cbd5e1" stroke-width="3" stroke-linecap="round" marker-end="url(#arr)"/>
+
+  <!-- Step 2 -->
+  <g transform="translate(180, 90)" filter="url(#stepShadow)">
+    <rect width="130" height="230" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+    <circle cx="65" cy="35" r="22" fill="#059669"/>
+    <text x="65" y="41" text-anchor="middle" class="step-num">2</text>
+    <text x="65" y="85" text-anchor="middle" class="step-title">اختيار الصورة</text>
+    <text x="65" y="110" text-anchor="middle" class="step-desc">تحديد الملف من</text>
+    <text x="65" y="128" text-anchor="middle" class="step-desc">الكمبيوتر أو الجوال</text>
+    <text x="65" y="152" text-anchor="middle" class="step-desc">بصيغة واضحة</text>
+    <rect x="25" y="165" width="80" height="26" rx="6" fill="#f1f5f9"/>
+    <text x="65" y="182" text-anchor="middle" font-family="monospace" font-size="11" fill="#475569">PNG / JPG</text>
+  </g>
+
+  <!-- Step 3 -->
+  <g transform="translate(330, 90)" filter="url(#stepShadow)">
+    <rect width="130" height="230" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+    <circle cx="65" cy="35" r="22" fill="#059669"/>
+    <text x="65" y="41" text-anchor="middle" class="step-num">3</text>
+    <text x="65" y="85" text-anchor="middle" class="step-title">إتمام الرفع</text>
+    <text x="65" y="110" text-anchor="middle" class="step-desc">اختيار عدم الحذف</text>
+    <text x="65" y="128" text-anchor="middle" class="step-desc">(Don't autodelete)</text>
+    <text x="65" y="152" text-anchor="middle" class="step-desc">لضمان بقاء الصورة</text>
+    <rect x="25" y="165" width="80" height="26" rx="6" fill="#059669"/>
+    <text x="65" y="182" text-anchor="middle" font-family="'Cairo', sans-serif" font-size="11" font-weight="700" fill="#fff">رفع الصورة</text>
+  </g>
+
+  <!-- Step 4 -->
+  <g transform="translate(480, 90)" filter="url(#stepShadow)">
+    <rect width="130" height="230" rx="12" fill="#ffffff" stroke="#f59e0b" stroke-width="2"/>
+    <circle cx="65" cy="35" r="22" fill="#d97706"/>
+    <text x="65" y="41" text-anchor="middle" class="step-num">4</text>
+    <text x="65" y="85" text-anchor="middle" class="step-title" fill="#b45309">اختيار الرابط</text>
+    <text x="65" y="110" text-anchor="middle" class="step-desc">فتح قائمة التضمين</text>
+    <text x="65" y="128" text-anchor="middle" class="step-desc">واختيار القيمة:</text>
+    <rect x="12" y="145" width="106" height="30" rx="6" fill="#fef3c7" stroke="#f59e0b"/>
+    <text x="65" y="165" text-anchor="middle" font-family="'Cairo', sans-serif" font-size="11" font-weight="800" fill="#92400e">Direct links</text>
+    <text x="65" y="195" text-anchor="middle" font-family="'Cairo', sans-serif" font-size="10" font-weight="700" fill="#dc2626">الخطوة الأهم!</text>
+  </g>
+
+  <!-- Step 5 -->
+  <g transform="translate(630, 90)" filter="url(#stepShadow)">
+    <rect width="130" height="230" rx="12" fill="#ffffff" stroke="#e2e8f0"/>
+    <circle cx="65" cy="35" r="22" fill="#059669"/>
+    <text x="65" y="41" text-anchor="middle" class="step-num">5</text>
+    <text x="65" y="85" text-anchor="middle" class="step-title">نسخ واختبار</text>
+    <text x="65" y="110" text-anchor="middle" class="step-desc">نسخ الرابط المباشر</text>
+    <text x="65" y="128" text-anchor="middle" class="step-desc">وفتحه بتبويب جديد</text>
+    <text x="65" y="152" text-anchor="middle" class="step-desc">للتأكد من ظهورها</text>
+    <rect x="15" y="165" width="100" height="26" rx="6" fill="#ecfdf5"/>
+    <text x="65" y="182" text-anchor="middle" font-family="monospace" font-size="10" fill="#047857">i.ibb.co/...</text>
+  </g>
+
+  <!-- Step 6 -->
+  <g transform="translate(775, 90)" filter="url(#stepShadow)">
+    <rect width="130" height="230" rx="12" fill="#ffffff" stroke="#10b981" stroke-width="2"/>
+    <circle cx="65" cy="35" r="22" fill="#10b981"/>
+    <text x="65" y="41" text-anchor="middle" class="step-num">6</text>
+    <text x="65" y="85" text-anchor="middle" class="step-title" fill="#047857">لصق وحفظ</text>
+    <text x="65" y="110" text-anchor="middle" class="step-desc">لصق الرابط في</text>
+    <text x="65" y="128" text-anchor="middle" class="step-desc">حقل الصورة بالمنصة</text>
+    <rect x="18" y="145" width="94" height="26" rx="6" fill="#047857"/>
+    <text x="65" y="162" text-anchor="middle" font-family="'Cairo', sans-serif" font-size="11" font-weight="700" fill="#fff">حفظ التغييرات</text>
+    <text x="65" y="195" text-anchor="middle" font-family="'Cairo', sans-serif" font-size="10" font-weight="700" fill="#15803d">تظهر فوراً للزوار ✅</text>
+  </g>
+</svg>
