@@ -63,11 +63,58 @@
 
       cat_images: "دليل الصور والشعارات",
       badge_essential: "هام جداً",
+      nav_img_converter: "أداة تحويل الصور لرابط مباشر",
+      nav_official_logo: "شعار المبادرة وهوية الألوان",
       nav_img_types: "ما هو الرابط المباشر؟",
       nav_img_upload: "الخطوات الـ 12 للرفع (ImgBB)",
       nav_img_tester: "فحص ومعاينة الرابط المباشر",
       nav_img_logos: "تغيير الشعارات في الإعدادات",
       nav_img_security: "أمان وخصوصية الصور",
+      btn_quick_converter: "أداة تحويل الصور لرابط مباشر",
+      btn_quick_logo: "شعار المبادرة الرسمي",
+
+      // Image Converter Suite
+      converter_main_title: "أداة ومولد تحويل الصور إلى روابط مباشرة",
+      badge_tool: "أداة تفاعلية سريعة",
+      converter_intro: "لتسهيل مهمة مسؤولي ومشرفي المنصة، توفر هذه الأداة المدمجة 3 طرق ذكية للحصول على رابط مباشر لأي صورة لاستخدامه فورًا في لوحة تحكم عافية تُزهر:",
+      conv_suite_title: "منصة تحويل وتوليد الروابط المباشرة",
+      conv_suite_subtitle: "اختر الطريقة الأنسب لك لتحويل أي صورة إلى رابط مباشر صافٍ",
+      conv_badge_instant: "فوري ومجاني 100%",
+      tab_local_title: "تحويل ملف صورة مباشر (Data-URI)",
+      tab_gdrive_title: "تحويل رابط Google Drive",
+      tab_imgbb_title: "رفع عبر ImgBB وشرحه",
+      dropzone_title: "اسحب وأفلت الصورة هنا، أو اضغط للاختيار من جهازك",
+      dropzone_hint: "يدعم صيغ PNG, JPG, WebP, SVG (يتم التحويل تلقائيًا إلى رابط مدمج مباشر)",
+      lbl_direct_data_url: "الرابط المباشر المولد (يمكنك نسخه ولصقه في حقول الصور):",
+      btn_copy_link: "نسخ الرابط المباشر",
+      gdrive_desc: "إذا قمت برفع الصورة على Google Drive، الصق رابط المشاركة هنا وسنقوم باستخراج معرف الملف وتحويله إلى رابط تدفق صورة خام مباشر:",
+      btn_convert_gdrive: "تحويل إلى رابط مباشر",
+      lbl_gdrive_result: "الرابط المباشر المستخرج (Raw Direct Image Stream):",
+      imgbb_tab_desc: "موقع ImgBB هو أسهل موقع للحصول على روابط مباشرة دائمة مجانية لصور المنصة:",
+      btn_open_imgbb: "فتح موقع ImgBB في نافذة جديدة ↗",
+      btn_view_steps: "قراءة الخطوات الـ 12 المصورة",
+      tip_direct_imgbb_t: "السر الذهبي في ImgBB:",
+      tip_direct_imgbb_d: "بعد رفع الصورة، افتح قائمة Embed codes واختر فقط Direct links ليكون الرابط المنسوخ بالصيغة: https://i.ibb.co/xyz/image.png.",
+
+      // Official Logo Showcase
+      logo_main_title: "شعار مبادرة عافية تُزهر الرسمي ودليل الألوان المعتمدة",
+      badge_official: "الهوية المعتمدة",
+      logo_p1: "يحمل شعار مبادرة «عافية تُزهر» دلالات تربوية وصحية عميقة تترجم رؤية المبادرة، وشعارها الخالد: «بالتوازن تحصل العافية • وبالعافية نزهر».",
+      logo_card_name: "الشعار الرسمي لمبادرة عافية تُزهر",
+      logo_card_desc: "خاتم دائري متكامل يضم النجوم الثلاثية للتميز، الشكل البشري الحركي للنشاط، سنبلة القمح للغذاء المتوازن، ورقة الشجر الخضراء للنقاء البيئي، وهلال النوم الصحي، متوجًا ببتلات زهرة العافية المتفتحة.",
+      btn_download_logo: "تحميل الشعار عالي الدقة (PNG)",
+      btn_copy_logo_url: "نسخ رابط الشعار المباشر",
+      logo_components_h3: "دلالات عناصر الشعار الرسمي:",
+      comp_1_t: "الرمز البشري الرشيق:",
+      comp_1_d: "يمثل النشاط البدني اليومي، الحركة، واللياقة المدرسية الحيوية.",
+      comp_2_t: "سنبلة القمح الذهبية:",
+      comp_2_d: "ترمز للتغذية المتوازنة الصحية وتناول وجبات الإفطار المدرسية الصحية.",
+      comp_3_t: "ورقة الشجر النضرة:",
+      comp_3_d: "ترمز للطبيعة والحيوية والبيئة التعليمية الخالية من الملوثات.",
+      comp_4_t: "هلال النوم الصحي (Zz):",
+      comp_4_d: "يرمز لأهمية النوم المبكر والراحة الكافية لصحة عقل وبدن الطالب والمعلم.",
+      comp_5_t: "بتلات الزهرة متعددة الألوان:",
+      comp_5_d: "تعبر عن كلمة «تُزهر» وتكامل الركائز الأربع للعافية التامة.",
 
       cat_faq: "حل المشكلات الشائعة",
       nav_faq: "الأسئلة الشائعة والحلول",
@@ -180,11 +227,58 @@
 
       cat_images: "Images & Logos Guide",
       badge_essential: "Essential",
+      nav_img_converter: "Image Direct Link Converter",
+      nav_official_logo: "Official Logo & Brand Colors",
       nav_img_types: "What is a Direct Link?",
       nav_img_upload: "12-Step Upload Guide (ImgBB)",
       nav_img_tester: "Interactive Link Tester",
       nav_img_logos: "Updating Logos in Settings",
       nav_img_security: "Image Privacy & Security",
+      btn_quick_converter: "Image Link Converter Tool",
+      btn_quick_logo: "Official Initiative Logo",
+
+      // Image Converter Suite
+      converter_main_title: "Direct Image Link Converter & Generator Suite",
+      badge_tool: "Fast Interactive Utility",
+      converter_intro: "To streamline content management, this integrated tool provides 3 smart methods to convert and generate direct image links for the Afiya Tazhar platform:",
+      conv_suite_title: "Direct Image Link Generation Suite",
+      conv_suite_subtitle: "Select your preferred method to generate an instant direct raw image link",
+      conv_badge_instant: "100% Instant & Free",
+      tab_local_title: "Local Image to Direct Link (Data-URI)",
+      tab_gdrive_title: "Google Drive Link Converter",
+      tab_imgbb_title: "ImgBB Direct Link Guide",
+      dropzone_title: "Drag & drop image here, or click to browse files",
+      dropzone_hint: "Supports PNG, JPG, WebP, SVG (converts automatically to direct data URL)",
+      lbl_direct_data_url: "Generated Direct URL (ready to paste in dashboard):",
+      btn_copy_link: "Copy Direct Link",
+      gdrive_desc: "If you uploaded your image to Google Drive, paste its share link here to convert it into a raw direct image stream URL:",
+      btn_convert_gdrive: "Convert to Direct Link",
+      lbl_gdrive_result: "Extracted Raw Direct Image Link:",
+      imgbb_tab_desc: "ImgBB is the simplest free hosting service to generate permanent direct image links:",
+      btn_open_imgbb: "Open ImgBB in New Window ↗",
+      btn_view_steps: "View 12-Step Visual Walkthrough",
+      tip_direct_imgbb_t: "Golden Rule for ImgBB:",
+      tip_direct_imgbb_d: "After upload, open Embed codes menu and select only 'Direct links' to get https://i.ibb.co/xyz/image.png.",
+
+      // Official Logo Showcase
+      logo_main_title: "Official Afiya Tazhar Logo & Brand Color Guide",
+      badge_official: "Approved Identity",
+      logo_p1: "The Afiya Tazhar logo embodies deep educational and health symbolism translating the initiative motto: 'Balance brings wellness, and through wellness we bloom'.",
+      logo_card_name: "Official Afiya Tazhar Initiative Logo",
+      logo_card_desc: "Integrated circular seal featuring triple stars of excellence, dynamic athletic figure, golden wheat stalk for balanced nutrition, green leaf for environmental vitality, sleep crescent, and blooming multi-color petals.",
+      btn_download_logo: "Download HD Logo (PNG)",
+      btn_copy_logo_url: "Copy Direct Logo URL",
+      logo_components_h3: "Symbolism of Official Logo Elements:",
+      comp_1_t: "Dynamic Human Figure:",
+      comp_1_d: "Represents daily physical activity, fitness, and vibrant school movement.",
+      comp_2_t: "Golden Wheat Stalk:",
+      comp_2_d: "Symbolizes balanced nutrition and wholesome school breakfast meals.",
+      comp_3_t: "Vibrant Green Leaf:",
+      comp_3_d: "Symbolizes nature, ecological health, and a pure educational environment.",
+      comp_4_t: "Sleep Crescent (Zz):",
+      comp_4_d: "Emphasizes the vital role of restorative sleep and early bedtime for mind and body.",
+      comp_5_t: "Blooming Colorful Petals:",
+      comp_5_d: "Expresses the flourishing bloom and unity of the 4 wellness pillars.",
 
       cat_faq: "Troubleshooting & FAQs",
       nav_faq: "Frequently Asked Questions",
@@ -316,6 +410,8 @@
     { id: 'user-media', ar: 'الإذاعات والمحاضرات', en: 'Broadcasts & Lectures' },
     { id: 'user-participation', ar: 'المشاركة والتسجيل', en: 'Participating & Registering' },
     { id: 'user-devices', ar: 'التصفح بالهاتف والكمبيوتر', en: 'Device Support' },
+    { id: 'image-converter', ar: 'أداة تحويل الصور لرابط مباشر', en: 'Image Direct Link Converter' },
+    { id: 'official-logo', ar: 'شعار المبادرة وهوية الألوان', en: 'Official Logo & Brand Colors' },
     { id: 'image-types', ar: 'ما هو الرابط المباشر؟', en: 'What is a Direct Link?' },
     { id: 'image-upload-steps', ar: 'الخطوات الـ 12 للرفع (ImgBB)', en: '12-Step Upload (ImgBB)' },
     { id: 'image-tester', ar: 'فحص واختبار الرابط المباشر', en: 'Direct Link Tester' },
@@ -808,6 +904,150 @@
           e.preventDefault();
           testDirectImageUrl();
         }
+      });
+    }
+
+    // ==========================================================================
+    // Interactive Direct Image Converter & Suite Handlers
+    // ==========================================================================
+    // 1. Converter Tabs Navigation
+    document.querySelectorAll('.conv-tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const targetTab = btn.getAttribute('data-tab');
+        document.querySelectorAll('.conv-tab-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.tab-pane').forEach(p => p.classList.remove('active'));
+
+        btn.classList.add('active');
+        const pane = document.getElementById(targetTab);
+        if (pane) pane.classList.add('active');
+      });
+    });
+
+    // 2. Local File to Base64 Direct Link (Dropzone & Input)
+    const dropzoneBox = document.getElementById('dropzoneBox');
+    const localFileInput = document.getElementById('localFileInput');
+    const localOutputWrap = document.getElementById('localOutputWrap');
+    const localPreviewImg = document.getElementById('localPreviewImg');
+    const localFileName = document.getElementById('localFileName');
+    const localFileMeta = document.getElementById('localFileMeta');
+    const localDirectUrlInput = document.getElementById('localDirectUrlInput');
+    const copyLocalDirectBtn = document.getElementById('copyLocalDirectBtn');
+
+    if (dropzoneBox && localFileInput) {
+      dropzoneBox.addEventListener('click', () => localFileInput.click());
+
+      dropzoneBox.addEventListener('dragover', (e) => {
+        e.preventDefault();
+        dropzoneBox.classList.add('dragover');
+      });
+
+      dropzoneBox.addEventListener('dragleave', () => {
+        dropzoneBox.classList.remove('dragover');
+      });
+
+      dropzoneBox.addEventListener('drop', (e) => {
+        e.preventDefault();
+        dropzoneBox.classList.remove('dragover');
+        if (e.dataTransfer.files && e.dataTransfer.files[0]) {
+          processLocalImageFile(e.dataTransfer.files[0]);
+        }
+      });
+
+      localFileInput.addEventListener('change', (e) => {
+        if (e.target.files && e.target.files[0]) {
+          processLocalImageFile(e.target.files[0]);
+        }
+      });
+    }
+
+    function processLocalImageFile(file) {
+      if (!file.type.startsWith('image/')) {
+        showToast(state.lang === 'ar' ? 'الرجاء اختيار ملف صورة صحيح (PNG, JPG, WebP, SVG).' : 'Please choose a valid image file.');
+        return;
+      }
+
+      const reader = new FileReader();
+      reader.onload = function (evt) {
+        const dataUrl = evt.target.result;
+        localPreviewImg.src = dataUrl;
+        localFileName.textContent = file.name;
+        
+        const sizeKb = (file.size / 1024).toFixed(1);
+        const img = new Image();
+        img.onload = function () {
+          localFileMeta.textContent = `${state.lang === 'ar' ? 'الأبعاد' : 'Dimensions'}: ${img.naturalWidth}x${img.naturalHeight}px | ${state.lang === 'ar' ? 'الحجم' : 'Size'}: ${sizeKb} KB`;
+        };
+        img.src = dataUrl;
+
+        localDirectUrlInput.value = dataUrl;
+        localOutputWrap.style.display = 'block';
+        showToast(state.lang === 'ar' ? 'تم تحويل الصورة بنجاح وتوليد الرابط المباشر!' : 'Image converted to direct link successfully!');
+      };
+      reader.readAsDataURL(file);
+    }
+
+    if (copyLocalDirectBtn && localDirectUrlInput) {
+      copyLocalDirectBtn.addEventListener('click', () => {
+        if (!localDirectUrlInput.value) return;
+        navigator.clipboard.writeText(localDirectUrlInput.value).then(() => {
+          showToast(state.lang === 'ar' ? 'تم نسخ الرابط المباشر إلى الحافظة بنجاح!' : 'Direct link copied to clipboard!');
+        });
+      });
+    }
+
+    // 3. Google Drive Share Link Converter
+    const gdriveInput = document.getElementById('gdriveInput');
+    const convertGdriveBtn = document.getElementById('convertGdriveBtn');
+    const gdriveOutputWrap = document.getElementById('gdriveOutputWrap');
+    const gdriveDirectUrlInput = document.getElementById('gdriveDirectUrlInput');
+    const copyGdriveDirectBtn = document.getElementById('copyGdriveDirectBtn');
+    const gdrivePreviewImg = document.getElementById('gdrivePreviewImg');
+
+    if (convertGdriveBtn && gdriveInput) {
+      convertGdriveBtn.addEventListener('click', () => {
+        const url = (gdriveInput.value || '').trim();
+        if (!url) {
+          showToast(state.lang === 'ar' ? 'يرجى لصق رابط Google Drive أولاً.' : 'Please paste a Google Drive link first.');
+          return;
+        }
+
+        // Match Google Drive file ID from pattern /d/FILE_ID/ or id=FILE_ID
+        const match = url.match(/\/d\/([a-zA-Z0-9_-]+)/) || url.match(/[?&]id=([a-zA-Z0-9_-]+)/);
+        if (!match || !match[1]) {
+          showToast(state.lang === 'ar' ? 'تعذر استخراج معرف الملف من الرابط. تأكد أنه رابط مشاركة Google Drive صحيح.' : 'Could not extract File ID. Ensure it is a valid Google Drive share link.');
+          return;
+        }
+
+        const fileId = match[1];
+        // High speed Google UserContent raw direct stream CDN URL
+        const directStreamUrl = `https://lh3.googleusercontent.com/d/${fileId}`;
+        
+        gdriveDirectUrlInput.value = directStreamUrl;
+        gdrivePreviewImg.src = directStreamUrl;
+        gdrivePreviewImg.style.display = 'block';
+        gdriveOutputWrap.style.display = 'block';
+
+        showToast(state.lang === 'ar' ? 'تم استخراج الرابط المباشر لـ Google Drive بنجاح!' : 'Direct link generated successfully!');
+      });
+    }
+
+    if (copyGdriveDirectBtn && gdriveDirectUrlInput) {
+      copyGdriveDirectBtn.addEventListener('click', () => {
+        if (!gdriveDirectUrlInput.value) return;
+        navigator.clipboard.writeText(gdriveDirectUrlInput.value).then(() => {
+          showToast(state.lang === 'ar' ? 'تم نسخ رابط الصورة المباشر بنجاح!' : 'Direct image link copied!');
+        });
+      });
+    }
+
+    // 4. Copy Official Logo Direct URL
+    const copyOfficialLogoUrlBtn = document.getElementById('copyOfficialLogoUrlBtn');
+    if (copyOfficialLogoUrlBtn) {
+      copyOfficialLogoUrlBtn.addEventListener('click', () => {
+        const fullLogoUrl = new URL('assets/afiya-logo.png', window.location.href).href;
+        navigator.clipboard.writeText(fullLogoUrl).then(() => {
+          showToast(state.lang === 'ar' ? 'تم نسخ رابط الشعار الرسمي المعتمد!' : 'Official logo direct URL copied!');
+        });
       });
     }
   }
