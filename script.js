@@ -173,7 +173,8 @@
       footer_copy: "دليل المستخدم الإلكتروني الشامل والمستقل | صُمم لدعم ونشر المعرفة الصحية المدرسية وتعزيز عافية الجميع.",
       footer_link_platform: "الموقع الرسمي للمبادرة ↗",
       footer_link_top: "العودة للبداية",
-      footer_link_faq: "الأسئلة الشائعة"
+      footer_link_faq: "الأسئلة الشائعة",
+      footer_dev_sig: "صمم بعناية في خدماتي البرمجية"
     },
 
     en: {
@@ -337,7 +338,8 @@
       footer_copy: "Comprehensive Standalone Electronic User Guide | Designed to support school health education and promote flourishing wellness for all.",
       footer_link_platform: "Official Platform Website ↗",
       footer_link_top: "Back to Top",
-      footer_link_faq: "Troubleshooting FAQs"
+      footer_link_faq: "Troubleshooting FAQs",
+      footer_dev_sig: "Carefully Designed by My Software Services"
     }
   };
 

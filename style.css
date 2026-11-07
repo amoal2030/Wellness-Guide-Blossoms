@@ -1727,6 +1727,62 @@ img, svg {
   font-size: 0.82rem;
 }
 
+/* Developer Signature Bar (صمم بعناية في خدماتي البرمجية) */
+.dev-signature-wrap {
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.6rem;
+  background: #0d2a30;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(232, 131, 57, 0.28);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  transition: all var(--transition-fast);
+}
+.dev-signature-wrap:hover {
+  background: #091f24;
+  border-color: rgba(232, 131, 57, 0.55);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(232, 131, 57, 0.25);
+}
+
+.dev-signature-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: #ea8037 !important;
+  font-family: var(--font-arabic);
+  font-size: 0.96rem;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  letter-spacing: 0.2px;
+}
+
+.dev-signature-text {
+  color: #ea8037;
+  border-bottom: 2px solid #ea8037;
+  padding-bottom: 2px;
+  transition: all var(--transition-fast);
+}
+
+.dev-signature-link:hover .dev-signature-text {
+  color: #f79652;
+  border-bottom-color: #f79652;
+  text-shadow: 0 0 10px rgba(234, 128, 55, 0.45);
+}
+
+.dev-signature-heart {
+  font-size: 1.15rem;
+  line-height: 1;
+  display: inline-block;
+  transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dev-signature-link:hover .dev-signature-heart {
+  transform: scale(1.25);
+}
+
 /* Animations */
 @keyframes fadeIn {
   from { opacity: 0; }
