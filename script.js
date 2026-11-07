@@ -29,6 +29,7 @@
       hero_desc: "دليلك الشامل للتعرف على المنصة واستخدام خدماتها وإدارة محتواها بسهولة، خطوة بخطوة للمدير الرئيسي، المشرفين، والزوار.",
 
       // Sidebar Categories & Links
+      drawer_menu_title: "أقسام الدليل",
       cat_overview: "نظرة عامة والترحيب",
       nav_intro: "مرحبًا بك في الدليل",
       nav_about: "عن منصة عافية تُزهر",
@@ -194,6 +195,7 @@
       hero_desc: "Your comprehensive step-by-step guide to exploring the platform, managing health content, and utilizing all services with ease for administrators, supervisors, and visitors.",
 
       // Sidebar Categories & Links
+      drawer_menu_title: "Guide Navigation",
       cat_overview: "Overview & Welcome",
       nav_intro: "Welcome to the Guide",
       nav_about: "About Blooming Wellness",
@@ -817,6 +819,14 @@
         appSidebar.classList.remove('open');
         sidebarBackdrop.classList.remove('open');
       });
+
+      const closeSidebarBtn = document.getElementById('closeSidebarBtn');
+      if (closeSidebarBtn) {
+        closeSidebarBtn.addEventListener('click', () => {
+          appSidebar.classList.remove('open');
+          sidebarBackdrop.classList.remove('open');
+        });
+      }
 
       // Close mobile sidebar on link click
       appSidebar.querySelectorAll('.sidebar-nav-link').forEach(link => {
